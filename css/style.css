@@ -1,6 +1,24 @@
 
 .upper-navbar-wrapper{
     background-color: rgba(51,161,55,255);
+    height: 40px;
+}
+.upper-navbar-wrapper .navbar{
+  padding: 0;
+}
+.upper-navbar-wrapper .navbar-brand{
+    font-size:x-large;
+    color: #fff;
+    margin-right: 10px;
+}
+.upper-navbar-wrapper .navbar-nav {
+    font-size: small;
+    font-weight: bold;
+}
+.upper-navbar-wrapper .navbar-nav .nav-link {
+color: #fff;
+padding-left: 0;
+padding-right: 1.3rem;
 }
 
 
@@ -20,3 +38,59 @@
     background-color:#fff;
     text-decoration: underline;
  }
+ .upper-navbar-wrapper .input-group .form-control{
+    background-color: rgba(51,161,55,255);
+   font-size: small; 
+
+ }
+ .upper-navbar-wrapper .input-group {
+    margin-right: -24px;
+ }
+ .upper-navbar-wrapper .input-group .btn{
+      border: none;
+    font-size: small;
+  
+
+}
+
+.upper-navbar-wrapper .input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3), .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+  height: 25px;
+
+}
+.upper-navbar-wrapper .input-group .btn i{
+position: absolute;
+top: 6px;
+right: 34px;
+
+
+}
+/* .upper-navbar-wrapper .add {
+    padding-left: 8px;
+} */
+.upper-navbar-wrapper .add .form-control{
+    background-color: rgba(51,161,55,255);
+   font-size: small; 
+
+ }
+ .upper-navbar-wrapper .add .btn{
+      border: none;
+    font-size: small;
+    /* margin-left: -41px; */
+
+}
+
+.add>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    height: 25px;
+    width: 74px;
+}
+.upper-navbar-wrapper .add .btn i {
+    position: absolute;
+    left: 28px;
+ 
+    
+    }
