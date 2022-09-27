@@ -1,0 +1,22 @@
+
+.upper-navbar-wrapper{
+    background-color: rgba(51,161,55,255);
+}
+
+
+.upper-navbar-wrapper .navbar-nav .new span{
+    font-size: xx-small;
+    background-color: red;
+    color: white;
+    padding: 0 6px;
+    border-radius: 10px;
+
+}
+.upper-navbar-wrapper .navbar-nav .dropdown-menu .dropdown-item {
+    font-size: smaller;
+}
+.upper-navbar-wrapper .navbar-nav .dropdown-menu .dropdown-item:hover {
+   
+    background-color:#fff;
+    text-decoration: underline;
+ }
