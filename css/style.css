@@ -1,28 +1,47 @@
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+.section-space {
+    padding:  40px 0;
+}
+.upper-navbar-wrapper {
+    background-color: rgba(51, 161, 55, 255);
+    height: 48px;
+}
 
-.upper-navbar-wrapper{
-    background-color: rgba(51,161,55,255);
-    height: 40px;
+.upper-navbar-wrapper .navbar {
+    padding: 0;
 }
-.upper-navbar-wrapper .navbar{
-  padding: 0;
-}
-.upper-navbar-wrapper .navbar-brand{
-    font-size:x-large;
+
+.upper-navbar-wrapper .navbar-brand {
+    font-size: x-large;
     color: #fff;
     margin-right: 10px;
 }
+.upper-navbar-wrapper .navbar-brand:hover {
+  
+    color: #fff;
+}
+
+
 .upper-navbar-wrapper .navbar-nav {
     font-size: small;
     font-weight: bold;
 }
+
 .upper-navbar-wrapper .navbar-nav .nav-link {
-color: #fff;
-padding-left: 0;
-padding-right: 1.3rem;
+    color: #fff;
+    padding-left: 0;
+    padding-right: 1.3rem;
+}
+.upper-navbar-wrapper .navbar-nav .nav-link:hover {
+    color: #fff;
+   
 }
 
-
-.upper-navbar-wrapper .navbar-nav .new span{
+.upper-navbar-wrapper .navbar-nav .new span {
     font-size: xx-small;
     background-color: red;
     color: white;
@@ -30,54 +49,74 @@ padding-right: 1.3rem;
     border-radius: 10px;
 
 }
+
 .upper-navbar-wrapper .navbar-nav .dropdown-menu .dropdown-item {
     font-size: smaller;
 }
-.upper-navbar-wrapper .navbar-nav .dropdown-menu .dropdown-item:hover {
-   
-    background-color:#fff;
-    text-decoration: underline;
- }
- .upper-navbar-wrapper .input-group .form-control{
-    background-color: rgba(51,161,55,255);
-   font-size: small; 
 
- }
- .upper-navbar-wrapper .input-group {
-    margin-right: -24px;
- }
- .upper-navbar-wrapper .input-group .btn{
-      border: none;
-    font-size: small;
-  
+.upper-navbar-wrapper .navbar-nav .dropdown-menu .dropdown-item:hover {
+
+    background-color: #fff;
+    text-decoration: underline;
+}
+
+.upper-navbar-wrapper .input-group {
+    padding-right: 20px;
+}
+.upper-navbar-wrapper .input-group .form-control::-webkit-input-placeholder {
+    color: #fff;
 
 }
 
-.upper-navbar-wrapper .input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3), .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+
+.upper-navbar-wrapper .input-group .form-control {
+    background-color: rgba(51, 161, 55, 255);
+    font-size: small;
+
+}
+
+.upper-navbar-wrapper .input-group {
+    margin-right: -24px;
+}
+
+.upper-navbar-wrapper .input-group .btn {
+   
+    font-size: small;
+    right: 33px;
+
+}
+.upper-navbar-wrapper .input-group .btn i {
+    position: absolute;
+    top: 3px;
+}
+
+.upper-navbar-wrapper .input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3),
+.input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
     border-top-right-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem;
-  height: 25px;
+    height: 25px;
 
 }
-.upper-navbar-wrapper .input-group .btn i{
-position: absolute;
-top: 6px;
-right: 34px;
 
-
+.upper-navbar-wrapper .add {
+    padding-left: 28px;
+    position: relative;
+  
+    padding-right: 0;
 }
-/* .upper-navbar-wrapper .add {
-    padding-left: 8px;
-} */
-.upper-navbar-wrapper .add .form-control{
-    background-color: rgba(51,161,55,255);
-   font-size: small; 
+.upper-navbar-wrapper .add .btn {
+    height: 27px;
+}
+.upper-navbar-wrapper .add .btn i {
+    position: absolute;
+    right: 106px;
+    top: 6px;
+}
 
- }
- .upper-navbar-wrapper .add .btn{
-      border: none;
+.upper-navbar-wrapper .add a {
+    border: none;
     font-size: small;
-    /* margin-left: -41px; */
+  
 
 }
 
@@ -88,9 +127,185 @@ right: 34px;
     height: 25px;
     width: 74px;
 }
-.upper-navbar-wrapper .add .btn i {
+
+.upper-navbar-wrapper .add a i {
     position: absolute;
-    left: 28px;
+    left: -130px;
+    z-index: 9999999;
+    top: 5px;
+    font-size: smaller;
+    color: gray;
+}
+
+.upper-navbar-wrapper .add .form-control {
+    background-color: rgba(51, 161, 55, 255);
+    font-size: small;
+
+}
+
+.Pakistani-flag  .dropdown-toggle::after {
+    display: none;
+
+}
+
+.Pakistani-flag .dropdown-item .flg{
+    background-color:aqua;
+    margin-bottom: 8px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+.Pakistani-flag .dropdown-item .flg img {
+    width: 20px;
+    height: 20px;
+}
+.Pakistani-flag .dropdown-item .flg p{
+    font-size: small;
+}
+
+.setting .dropdown-item .flg{
+    background-color:aqua;
+    margin-bottom: 8px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+.setting .dropdown-item .flg img {
+    width: 20px;
+    height: 20px;
+}
+.setting .dropdown-item .flg p{
+    font-size: small;
+}
+.setting  .dropdown-toggle::after {
+    display: none;
+
+}
+.lower-navbar-wrapper .navbar{
+    padding: 0;
+}
+.lower-navbar-wrapper .navbar .navbar-brand{
+    padding-right: 60px;
+} 
+.lower-navbar-wrapper .navbar-nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.lower-navbar-wrapper .navbar-nav .dropdown-item:hover{
+    background-color: #fff;
+}
+.lower-navbar-wrapper .navbar-nav #adit .dropdown-item{
+    transform: translateX(-300px);
+    display: none;
+}
+
+
+.triangle-up::after {
+    content: '';
+	width: 0;
+	height: 0;
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	border-bottom: 7px solid #fff;
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 67px;
  
-    
-    }
+}
+.main-carusuol-wrapper img {
+    width: 100%;
+    height: 500px;
+}
+
+
+
+/* 
+.product-promotional-wrapper .machine {
+    background: rgb(230, 224, 227);
+    width: 89px;
+    height: 94px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-promotional-wrapper img {
+width: 50px;
+height: 50px;
+}
+
+.product-promotional-wrapper p {
+    font-size: smaller;
+}
+.product-promotional-wrapper .machine:hover {
+    border:2px solid lightsalmon;
+   
+}
+.product-promotional-wrapper .invst:hover {
+    color: lightsalmon;
+   
+}
+
+.locational-wrapper a {
+    text-decoration: none;
+    display: block;
+}
+.locational-wrapper .content-wrapper {
+    border: 1px solid rgb(189, 185, 185);
+    width: 290px;
+    height: 150px;
+    padding-top: 16px;
+   border-radius: 8px;
+  
+}
+.locational-wrapper .content-wrapper:hover {
+    border: 1px solid rgb(86, 86, 242);
+
+
+}
+.locational-wrapper .content-wrapper .price i {
+    transform: rotateY(200deg);
+}
+.projects-wrapper .card {
+    width: 15rem;
+    position: relative;
+}
+
+.projects-wrapper .card span {
+  
+    background-color: red;
+    width: 70px;
+    padding: 2px 20px;
+    font-size: small;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+}
+
+.owl-nav {
+    position: relative;
+}
+.owl-nav .owl-prev span {
+    position: absolute;
+    top: -135px;
+    left: -16px;
+font-size: xx-large;
+}
+.owl-nav .owl-next span {
+    position: absolute;
+    top: -135px;
+    right: 6px;
+font-size: xx-large;
+}
+.Titanium-wrapper #titanium .card{
+    border: none;
+}
+.Titanium-wrapper #titanium .card img {
+    width: 150px;
+}
+
+
+ */
