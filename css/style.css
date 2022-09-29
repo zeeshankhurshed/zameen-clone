@@ -182,14 +182,19 @@
 .lower-navbar-wrapper .navbar{
     padding: 0;
 }
+.lower-navbar-wrapper .navbar .navbar-brand img {
+    width: 137px;
+    height: 35px;
+
+}
 .lower-navbar-wrapper .navbar .navbar-brand{
-    padding-right: 60px;
+    padding-right: 25px;
 } 
 .lower-navbar-wrapper .navbar-nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
+    font-size: small;
 }
 .lower-navbar-wrapper .navbar-nav .dropdown-item:hover{
     background-color: #fff;
@@ -204,8 +209,8 @@
     content: '';
 	width: 0;
 	height: 0;
-	border-left: 3px solid transparent;
-	border-right: 3px solid transparent;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
 	border-bottom: 7px solid #fff;
     display: block;
     position: absolute;
