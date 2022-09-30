@@ -154,7 +154,9 @@
     left: -123px;
  
 }
-
+.Pakistani-flag .dropdown-item:hover {
+    background-color: #fff;
+}
 .Pakistani-flag .dropdown-item .flg{
     background-color:white;
     margin-bottom: 8px;
@@ -168,10 +170,17 @@
 .Pakistani-flag .dropdown-item .flg p{
     font-size: small;
 }
+.setting .dropdown .btn:focus {
+    box-shadow: none;
+ }
+
 .setting .dropdown-menu[data-bs-popper] {
 
     left: -115px;
  
+}
+.setting .dropdown-item:hover {
+    background-color: #fff;
 }
 .setting .dropdown-item .flg{
     background-color:white;
@@ -259,9 +268,19 @@
     left:396px;
     top: 15px;
 }
+.main-carosuel-inner-wrapper {
+    position: relative;
+}
+
 .main-carusuol-wrapper img {
     width: 100%;
     height: 500px;
+}
+.worth-wraper{
+  position: relative;
+  top: -410px;
+  left: -20px;
+ 
 }
 .worth-wraper .btn-outline-warning {
     color: black;
@@ -270,11 +289,135 @@
     border:1px solid white;
 }
 .worth-wraper .btn-outline-warning:hover {
-    color: #000;
+    color: #000!important;
     background-color: white;
 
 }
+.worth-wraper .city .dropdown-menu {
+    width: 165px;
+    height: 150px;
+    padding: 6px 12px;
+    overflow-y: auto;
+}
+.worth-wraper .city .dropdown-item {
+    border: 1px solid rgb(230, 216, 216);
+   
+    
+}
+.worth-wraper .location {
+    position: relative;
+    width: 37%;
+}
+.worth-wraper .location .form-control {
+    height: 52px;
+    border-radius: 0;
+    border: 1px solid gray;
+    margin-left: -24px;
+}
+.worth-wraper .location .form-control::-webkit-input-placeholder {
+   font-size: xx-small;
+   position: absolute;
+   top: 6px;
+}
+.worth-wraper .find {
+    padding-left:16px ;
+}
+.worth-wraper .find .btn {
+    border-radius: 0;
+    width: 150px;
+    height: 52px;
+position: relative;
+}
+.worth-wraper .accordion-button a {
+    text-decoration: none;
+    padding: 0 8px;
+    font-size: small;
+}
+.worth-wraper .accordion-button:focus {
+   
+    border-color: white;
+  
+    box-shadow: none;
+}
+.opt::before{
+    content: '';
+    width: 5px;
+    height: 17px;
+    display: block;
+    border-left: 1px solid gray;
+    position: absolute;
+    left: 109px;
 
+}
+.cur::before{
+    content: '';
+    width: 5px;
+    height: 17px;
+    display: block;
+    border-left: 1px solid gray;
+    position: absolute;
+    left: 224px;
+
+}
+.area::before{
+    content: '';
+    width: 5px;
+    height: 17px;
+    display: block;
+    border-left: 1px solid gray;
+    position: absolute;
+    left: 341px;
+
+}
+.worth-wraper .accordion-button::after {
+ 
+    margin-left: -425px;
+   
+}
+.worth-wraper .amount {
+    width: 140px;
+    height: 150px;
+    overflow-y: auto;
+  font-size: small;
+  margin-left: 16px;
+}
+.worth-wraper .amount li{
+  
+    border: 1px solid gray;
+}
+.worth-wraper .amount li a{
+  display: flex;
+  justify-content: center;
+
+}
+.worth-wraper .rate {
+    width: 157px;
+    height: 150px;
+    font-size: small;
+    overflow-y: auto;
+}
+.worth-wraper .rate li{
+   
+    border: 1px solid gray;
+}
+.worth-wraper .rate li a{
+    display: flex;
+    justify-content: center;
+  
+  }
+  .carosuel-up::after {
+    content: '';
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 14px solid black;
+    display: block;
+    position: absolute;
+    top: 290px;
+    left: 167px;
+ 
+}
 /* 
 .product-promotional-wrapper .machine {
     background: rgb(230, 224, 227);
