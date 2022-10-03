@@ -70,7 +70,7 @@
               </ul>
               <form class="d-flex " style="position: relative; align-items:center">
 
-                <div class="input-group ">
+                <div class="input-group  ">
                   <input type="text" class="form-control " placeholder="Property ID" aria-label="Recipient's username"
                     aria-describedby="button-addon2">
 
@@ -80,11 +80,13 @@
                 <div class="input-group add ">
 
                   <button type="button" class="btn bg-white btn-sm text-black"><i class="fa fa-plus add"
-                      aria-hidden="true"></i></i><span style="margin-left: 30px;">Add Property</span> </button>
+                      aria-hidden="true" style="display:contents;"></i></i><span style="margin-left: 30px;">Add
+                      Property</span> </button>
                 </div>
                 <div class="urdu">
 
-                  <a href="" title="اردو" style="padding: 0 12px; color:white; text-decoration:none;">اردو</a>
+                  <a href="" title="اردو" style="padding: 0 12px; color:white; text-decoration:none;"> اردو
+                    <span></span></a>
                 </div>
 
                 <div class="Pakistani-flag">
@@ -278,463 +280,673 @@
     </header>
     <main>
       <div class="main-carusuol-wrapper">
-        <img src="assets/main carosuel.png" alt="">
+        <!-- <img src="assets/main carosuel.png" alt=""> -->
 
         <div class="worth-wraper">
           <div class="container">
+
             <div class="row">
-              <div class="col-md-12 pb-3">
-                <h3 class="text-white">Search properties for sale in Pakistan</h3>
-              </div><!-- /.col-md-12 -->
-            </div><!-- /.row -->
-  
-            <div class="row">
-              <div class="col-md-1" style="width:12%;">
-                <button type="button" class="btn btn-outline-warning text-white active " style="padding:6px 32px; ">BUY</button>
-              </div><!-- /.col-md-2 -->
-              <div class="col-md-1" style="width:12%;">
-                <button type="button" class="btn btn-outline-warning text-white" style="padding:6px 28px;">RENT</button>
-              </div><!-- /.col-md-2 -->
-              <div class="col-md-1" style="width:12%;">
-                <button type="button" class="btn btn-outline-warning text-white" style="padding:6px 14px;">PROJECTS</button>
-              </div><!-- /.col-md-2 -->
-            </div><!-- /.row -->
-  
-            <div class="row pt-4" style="padding-left: 12px; ">
-              <div class="col-md-2" style="padding: 0;">
-                <div class="dropdown city" style="background-color:rgba(41,43,43,255);">
-                  <button style="border:1px solid gray; padding: 6px 32px; border-radius: 0;background-color:white;" class="btn bg-white dropdown-toggle"
-                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    <p style="font-size: xx-small; margin-bottom:0; margin-left:-74px;" class="text-muted">CITY</p> <span
-                      style="font-size:small;" >RAWALPINDI</span>
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li style="padding:6px;"><a style="padding:18px; width:127px;" class="dropdown-item" href="#"></a>
-                    </li>
-                    <li><a class="dropdown-item" href="#">Islamabad</a></li>
-                    <li><a class="dropdown-item" href="#">Karachi</a></li>
-                    <li><a class="dropdown-item" href="#">Lahore</a></li>
-                    <li><a class="dropdown-item" href="#">Rawalpindi</a></li>
-                    <li><a class="dropdown-item" href="#">Quetta</a></li>
-                    <li><a class="dropdown-item" href="#">Peshawar</a></li>
-                    <li><a class="dropdown-item" href="#">Karachi</a></li>
-                    <li><a class="dropdown-item" href="#">Lahore</a></li>
-                    <li><a class="dropdown-item" href="#">Rawalpindi</a></li>
-                    <li><a class="dropdown-item" href="#">Quetta</a></li>
-                    <li><a class="dropdown-item" href="#">Peshawar</a></li>
-                  </ul>
-                </div>
-              </div><!-- /.col-md-2 -->
-  
-  
-              <div class="col-md-4 location" style="background-color:rgba(41,43,43,255);">
-  
-                <input type="text" class="form-control" placeholder="LOCATION" aria-label="City">
-  
-              </div><!-- /.col-md-2 -->
-              <div class="col-md-2 find">
-                <button type="button" class="btn btn-success btn-lg"
-                  style="font-size: small; font-weight:bold;    margin-left: -41px;">Find</button>
-              </div><!-- /.col-md-2 -->
-            </div><!-- /.row -->
-  
-            <div class="accordion " style="width: 66%;" id="accordionExample">
-              <div class="accordion-item" style="background-color: rgba(41,43,43,255);">
-  
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                  data-bs-parent="#accordionExample">
-                  <div class="accordion-body" style="padding: 0;">
-  
-                    <div class="row pt-2" style="display: flex; justify-content: space-between;
-                    align-items: center;">
-                      <div class="col-md-2">
-                        <div class="dropdown ">
-                          <button style="border:1px solid gray; padding: 6px 46px; border-radius: 0; background-color:white;"
-                            class="btn   dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <p style="font-size: xx-small; margin-bottom:0; " class="text-muted">PROPERTY TYPE</p> <span
-                              style=" font-size:small;">HOME</span>
-                          </button>
-                          <ul class="dropdown-menu" style="min-width: 20rem; padding-left:35px"
-                            aria-labelledby="dropdownMenuButton1">
-  
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                              <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                                  data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                                  aria-selected="true" style=" color:#000; background-color: #fff;background-color:white;
-                                ">Home</button>
-                              </li>
-                              <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                                  data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-                                  aria-selected="false" style=" color:#000; background-color: #fff;
-                                ">Plot</button>
-                              </li>
-                              <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                                  data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
-                                  aria-selected="false" style=" color:#000; background-color: #fff;
-                                ">Commercial</button>
-                              </li>
-                            </ul>
-                            <div class="tab-content" id="pills-tabContent">
-                              <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                                aria-labelledby="pills-home-tab">
-  
-                                <div class="row pt-">
-                                  <div class="col-md-5" style="border: 1px solid rgb(223, 215, 215); text-align:center;">
-                                    <a href="" style="text-decoration: none; color:black; font-size:small;">House</a>
-                                  </div><!-- /.col-md-5 -->
-                                  <div class="col-md-5"
-                                    style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
-                                    <a href="" style="text-decoration: none; color:black;  font-size:small;">Flat</a>
-                                  </div><!-- /.col-md-5 -->
-                                </div><!-- /.row -->
-  
-                                <div class="row pt-3">
-                                  <div class="col-md-5" style="border: 1px solid rgb(223, 215, 215); text-align:center;">
-                                    <a href="" style="text-decoration: none; color:black; font-size:small;">Upper
-                                      Portion</a>
-                                  </div><!-- /.col-md-5 -->
-                                  <div class="col-md-5"
-                                    style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
-                                    <a href="" style="text-decoration: none; color:black;  font-size:small;">lower
-                                      Portion</a>
-                                  </div><!-- /.col-md-5 -->
-                                </div><!-- /.row -->
-  
-                                <div class="row pt-3">
-                                  <div class="col-md-5" style="border: 1px solid rgb(223, 215, 215); text-align:center;">
-                                    <a href="" style="text-decoration: none; color:black; font-size:small;">Farm House</a>
-                                  </div><!-- /.col-md-5 -->
-                                  <div class="col-md-5"
-                                    style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
-                                    <a href="" style="text-decoration: none; color:black;  font-size:small;">Room</a>
-                                  </div><!-- /.col-md-5 -->
-                                </div><!-- /.row -->
-  
-                                <div class="row pt-3">
-                                  <div class="col-md-5" style="border: 1px solid rgb(223, 215, 215); text-align:center;">
-                                    <a href="" style="text-decoration: none; color:black; font-size:small;">Pent House</a>
-                                  </div><!-- /.col-md-5 -->
-  
-                                </div><!-- /.row -->
-  
-                                <div class="row pt-3">
-                                  <div class="col-md-5" style="text-align:end;">
-                                    <a href="" style="text-decoration: none; color:black; font-size:small;">Reset</a>
-                                  </div><!-- /.col-md-5 -->
-                                  <div class="col-md-5" style="text-align:end;">
-                                    <a href="" style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
-                                  </div><!-- /.col-md-5 -->
-                                </div>
-  
+              <div class="col-sm-12 col-md-12 col-lg-8 wth" style="margin:80px 0 0 0;">
+
+                <div class="row">
+                  <div class="col-md-12 pb-3">
+                    <h4 class="text-white">Search properties for sale in Pakistan</h4>
+                  </div><!-- /.col-md-12 -->
+                </div><!-- /.row -->
+
+                <div class="row brp pb-4">
+                  <div class="col-xs-2 col-sm-2 col-md-2  col-lg-2 col-xlg-2 btm">
+                    <button type="button" class="btn btn-outline-warning text-white active "
+                      style="padding:6px 32px; ">BUY</button>
+                  </div><!-- /.col-md-2 -->
+                  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xlg-2 btm">
+                    <button type="button" class="btn btn-outline-warning text-white"
+                      style="padding:6px 28px;">RENT</button>
+                  </div><!-- /.col-md-2 -->
+                  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xlg-2">
+                    <button type="button" class="btn btn-outline-warning text-white"
+                      style="padding:6px 14px;">PROJECTS</button>
+                  </div><!-- /.col-md-2 -->
+                </div><!-- /.row -->
+
+                <div class="lower-carosuel" style="background-color:rgba(41,43,43,255);">
+
+                  <div class="row pt-2 rwp" style=" justify-content:space-around;">
+                    <div class="col-xsm-2 col-sm-2 col-md-2 col-lg-2" style="padding: 0;">
+                      <div class="dropdown city">
+                        <button
+                          style="border:1px solid gray; padding: 6px 32px; border-radius: 0;background-color:white;"
+                          class="btn bg-white dropdown-toggle" type="button" id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          <p style="font-size: xx-small; margin-bottom:0; margin-left:-74px;" class="text-muted">CITY
+                          </p> <span style="font-size:small;">RAWALPINDI</span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li style="padding:6px;"><a style="padding:18px; width:127px;" class="dropdown-item"
+                              href="#"></a>
+                          </li>
+                          <li><a class="dropdown-item" href="#">Islamabad</a></li>
+                          <li><a class="dropdown-item" href="#">Karachi</a></li>
+                          <li><a class="dropdown-item" href="#">Lahore</a></li>
+                          <li><a class="dropdown-item" href="#">Rawalpindi</a></li>
+                          <li><a class="dropdown-item" href="#">Quetta</a></li>
+                          <li><a class="dropdown-item" href="#">Peshawar</a></li>
+                          <li><a class="dropdown-item" href="#">Karachi</a></li>
+                          <li><a class="dropdown-item" href="#">Lahore</a></li>
+                          <li><a class="dropdown-item" href="#">Rawalpindi</a></li>
+                          <li><a class="dropdown-item" href="#">Quetta</a></li>
+                          <li><a class="dropdown-item" href="#">Peshawar</a></li>
+                        </ul>
+                      </div>
+                    </div><!-- /.col-md-2 -->
+
+
+                    <div class="col-xsm-4 col-sm-4 col-md-4 col-lg-4 location">
+
+                      <input type="text" class="form-control" placeholder="LOCATION" aria-label="City">
+
+                    </div><!-- /.col-md-2 -->
+                    <div class="col-xsm-2 col-sm-2 col-md-2 col-lg-2  col-xlg-2 find">
+                      <button type="button" class="btn btn-success btn-lg"
+                        style="font-size: small; font-weight:bold;    margin-left: -41px;">Find</button>
+                    </div><!-- /.col-md-2 -->
+                  </div><!-- /.row -->
+
+                  <div class="accordion " id="accordionExample">
+                    <div class="accordion-item" style="background-color: rgba(41,43,43,255);">
+
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body" style="padding: 0;">
+
+                          <div class="row pt-2" style="display: flex; justify-content: space-between;
+                          align-items: center;">
+                            <div class="col-sm-6 col-md-2 col-lg-2 shme">
+                              <div class="dropdown hme">
+                                <button
+                                  style="border:1px solid gray; padding: 6px 46px; border-radius: 0; background-color:white; margin-left:24px;"
+                                  class="btn   dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                  data-bs-toggle="dropdown" aria-expanded="false">
+                                  <p style="font-size: xx-small; margin-bottom:0; " class="text-muted">PROPERTY TYPE</p>
+                                  <span style=" font-size:small;">HOME</span>
+                                </button>
+                                <ul class="dropdown-menu" style="min-width: 20rem; padding-left:35px"
+                                  aria-labelledby="dropdownMenuButton1">
+
+                                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                        aria-selected="true" style=" color:#000; background-color: #fff;background-color:white;
+                                      ">Home</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-profile" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false" style=" color:#000; background-color: #fff;
+                                      ">Plot</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-contact" type="button" role="tab"
+                                        aria-controls="pills-contact" aria-selected="false" style=" color:#000; background-color: #fff;
+                                      ">Commercial</button>
+                                    </li>
+                                  </ul>
+                                  <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                      aria-labelledby="pills-home-tab">
+
+                                      <div class="row pt-">
+                                        <div class="col-md-5"
+                                          style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                          <a href=""
+                                            style="text-decoration: none; color:black; font-size:small;">House</a>
+                                        </div><!-- /.col-md-5 -->
+                                        <div class="col-md-5"
+                                          style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                          <a href=""
+                                            style="text-decoration: none; color:black;  font-size:small;">Flat</a>
+                                        </div><!-- /.col-md-5 -->
+                                      </div><!-- /.row -->
+
+                                      <div class="row pt-3">
+                                        <div class="col-md-5"
+                                          style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                          <a href="" style="text-decoration: none; color:black; font-size:small;">Upper
+                                            Portion</a>
+                                        </div><!-- /.col-md-5 -->
+                                        <div class="col-md-5"
+                                          style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                          <a href="" style="text-decoration: none; color:black;  font-size:small;">lower
+                                            Portion</a>
+                                        </div><!-- /.col-md-5 -->
+                                      </div><!-- /.row -->
+
+                                      <div class="row pt-3">
+                                        <div class="col-md-5"
+                                          style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                          <a href="" style="text-decoration: none; color:black; font-size:small;">Farm
+                                            House</a>
+                                        </div><!-- /.col-md-5 -->
+                                        <div class="col-md-5"
+                                          style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                          <a href=""
+                                            style="text-decoration: none; color:black;  font-size:small;">Room</a>
+                                        </div><!-- /.col-md-5 -->
+                                      </div><!-- /.row -->
+
+                                      <div class="row pt-3">
+                                        <div class="col-md-5"
+                                          style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                          <a href="" style="text-decoration: none; color:black; font-size:small;">Pent
+                                            House</a>
+                                        </div><!-- /.col-md-5 -->
+
+                                      </div><!-- /.row -->
+
+                                      <div class="row pt-3">
+                                        <div class="col-md-5" style="text-align:end;">
+                                          <a href=""
+                                            style="text-decoration: none; color:black; font-size:small;">Reset</a>
+                                        </div><!-- /.col-md-5 -->
+                                        <div class="col-md-5" style="text-align:end;">
+                                          <a href=""
+                                            style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
+                                        </div><!-- /.col-md-5 -->
+                                      </div>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                      aria-labelledby="pills-profile-tab">
+
+                                      <div class="row pt-1">
+                                        <div class="col-md-5"
+                                          style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                          <a href=""
+                                            style="text-decoration: none; color:black; font-size:small;">Residential
+                                            Plot</a>
+                                        </div><!-- /.col-md-5 -->
+                                        <div class="col-md-5"
+                                          style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                          <a href=""
+                                            style="text-decoration: none; color:black;  font-size:small;">commercial
+                                            Plot</a>
+                                        </div><!-- /.col-md-5 -->
+                                      </div><!-- /.row -->
+
+                                      <div class="row pt-3">
+                                        <div class="col-md-5"
+                                          style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                          <a href=""
+                                            style="text-decoration: none; color:black; font-size:small;">Agriculture
+                                            Plot</a>
+                                        </div><!-- /.col-md-5 -->
+                                        <div class="col-md-5"
+                                          style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                          <a href=""
+                                            style="text-decoration: none; color:black;  font-size:small;">Industrial
+                                            Land </a>
+                                        </div><!-- /.col-md-5 -->
+                                      </div><!-- /.row -->
+
+                                      <div class="row pt-3">
+                                        <div class="col-md-5"
+                                          style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                          <a href="" style="text-decoration: none; color:black; font-size:small;">Plot
+                                            File</a>
+                                        </div><!-- /.col-md-5 -->
+                                        <div class="col-md-5"
+                                          style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                          <a href="" style="text-decoration: none; color:black;  font-size:small;">Plot
+                                            Land</a>
+                                        </div><!-- /.col-md-5 -->
+                                      </div><!-- /.row -->
+
+                                      <div class="row pt-3">
+                                        <div class="col-md-5" style="text-align:end;">
+                                          <a href=""
+                                            style="text-decoration: none; color:black; font-size:small;">Reset</a>
+                                        </div><!-- /.col-md-5 -->
+                                        <div class="col-md-5" style="text-align:end;">
+                                          <a href=""
+                                            style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
+                                        </div><!-- /.col-md-5 -->
+                                      </div>
+
+
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                      aria-labelledby="pills-contact-tab">
+
+                                      <div class="row pt-1">
+                                        <div class="col-md-5"
+                                          style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                          <a href=""
+                                            style="text-decoration: none; color:black; font-size:small;">Office</a>
+                                        </div><!-- /.col-md-5 -->
+                                        <div class="col-md-5"
+                                          style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                          <a href=""
+                                            style="text-decoration: none; color:black;  font-size:small;">Shop</a>
+                                        </div><!-- /.col-md-5 -->
+                                      </div><!-- /.row -->
+
+                                      <div class="row pt-3">
+                                        <div class="col-md-5"
+                                          style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                          <a href=""
+                                            style="text-decoration: none; color:black; font-size:small;">Warehouse</a>
+                                        </div><!-- /.col-md-5 -->
+                                        <div class="col-md-5"
+                                          style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                          <a href=""
+                                            style="text-decoration: none; color:black;  font-size:small;">Factory</a>
+                                        </div><!-- /.col-md-5 -->
+                                      </div><!-- /.row -->
+
+                                      <div class="row pt-3">
+                                        <div class="col-md-5"
+                                          style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                          <a href=""
+                                            style="text-decoration: none; color:black; font-size:small;">Building</a>
+                                        </div><!-- /.col-md-5 -->
+                                        <div class="col-md-5"
+                                          style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                          <a href=""
+                                            style="text-decoration: none; color:black;  font-size:small;">Others</a>
+                                        </div><!-- /.col-md-5 -->
+                                      </div><!-- /.row -->
+
+                                      <div class="row pt-3">
+                                        <div class="col-md-5" style="text-align:end;">
+                                          <a href=""
+                                            style="text-decoration: none; color:black; font-size:small;">Reset</a>
+                                        </div><!-- /.col-md-5 -->
+                                        <div class="col-md-5" style="text-align:end;">
+                                          <a href=""
+                                            style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
+                                        </div><!-- /.col-md-5 -->
+                                      </div>
+
+                                    </div>
+                                  </div>
+
+                                </ul>
                               </div>
-                              <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                                aria-labelledby="pills-profile-tab">
-  
-                                <div class="row pt-1">
-                                  <div class="col-md-5" style="border: 1px solid rgb(223, 215, 215); text-align:center;">
-                                    <a href="" style="text-decoration: none; color:black; font-size:small;">Residential Plot</a>
-                                  </div><!-- /.col-md-5 -->
-                                  <div class="col-md-5"
-                                    style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
-                                    <a href="" style="text-decoration: none; color:black;  font-size:small;">commercial Plot</a>
-                                  </div><!-- /.col-md-5 -->
-                                </div><!-- /.row -->
-  
-                                <div class="row pt-3">
-                                  <div class="col-md-5" style="border: 1px solid rgb(223, 215, 215); text-align:center;">
-                                    <a href="" style="text-decoration: none; color:black; font-size:small;">Agriculture Plot</a>
-                                  </div><!-- /.col-md-5 -->
-                                  <div class="col-md-5"
-                                    style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
-                                    <a href="" style="text-decoration: none; color:black;  font-size:small;">Industrial Land </a>
-                                  </div><!-- /.col-md-5 -->
-                                </div><!-- /.row -->
-  
-                                <div class="row pt-3">
-                                  <div class="col-md-5" style="border: 1px solid rgb(223, 215, 215); text-align:center;">
-                                    <a href="" style="text-decoration: none; color:black; font-size:small;">Plot File</a>
-                                  </div><!-- /.col-md-5 -->
-                                  <div class="col-md-5"
-                                    style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
-                                    <a href="" style="text-decoration: none; color:black;  font-size:small;">Plot Land</a>
-                                  </div><!-- /.col-md-5 -->
-                                </div><!-- /.row -->
-  
-                                <div class="row pt-3">
-                                  <div class="col-md-5" style="text-align:end;">
-                                    <a href="" style="text-decoration: none; color:black; font-size:small;">Reset</a>
-                                  </div><!-- /.col-md-5 -->
-                                  <div class="col-md-5" style="text-align:end;">
-                                    <a href="" style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
-                                  </div><!-- /.col-md-5 -->
-                                </div>
-  
-  
+                            </div><!-- /.col-md-2 -->
+
+                            <div class="col-sm-6 col-md-2 col-lg-2 shme">
+                              <div class="dropdown any">
+                                <button
+                                  style="border:1px solid gray; padding: 6px 57px; border-radius: 0;background-color:white; margin-left:3px;"
+                                  class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                  data-bs-toggle="dropdown" aria-expanded="false">
+                                  <p style="font-size: xx-small; margin-bottom:0; margin-left:-78px;"
+                                    class="text-muted">
+                                    PRICE(PKR)</p> <span style="margin-left:-47px;"> <span>0</span> <span>to Any</span>
+                                  </span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="width: 20rem;">
+                                  <p
+                                    style="text-align: center; font-size:small; background-color:lightgray;padding:8px;">
+                                    Change Currency (PKR)</p>
+                                  <div class="row text-center">
+                                    <div class="col-md-6">
+                                      <h6 style="font-size: small!important; ">MIN:</h6>
+                                    </div><!-- /.col-md-6 -->
+                                    <div class="col-md-6">
+                                      <h6 style="font-size: small!important;">MAX:</h6>
+                                    </div><!-- /.col-md-6 -->
+                                  </div><!-- /.row -->
+
+                                  <div class="row text-center"
+                                    style="justify-content:space-evenly; align-items:center;">
+                                    <div class="col-md-2 text-muted"
+                                      style="border: 1px solid rgb(177, 170, 170);border-radius:5px;padding:5px 34px; ">
+                                      <h6 style="font-size: small!important; ">0</h6>
+                                    </div><!-- /.col-md-2 -->
+                                    <div class="col-md-2 text-muted"
+                                      style="border: 1px solid rgb(177, 170, 170);border-radius:5px;padding:5px 34px; ">
+                                      <h6 style="font-size: small!important;">Any</h6>
+                                    </div><!-- /.col-md-2 -->
+                                  </div><!-- /.row -->
+
+                                  <div class="row  pt-3 ">
+                                    <div class="col-md-3 amount">
+
+                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">0</a></li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">50,000</a></li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">500,000</a></li>
+                                      <li style="padding-left: 28px;"> <a class="dropdown-item" href="#">5000,000</a>
+                                      </li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a>
+                                      </li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a>
+                                      </li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a>
+                                      </li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">10000,0000</a>
+                                      </li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">10000,0000</a>
+                                      </li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a>
+                                      </li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a>
+                                      </li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a>
+                                      </li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">10000,0000</a>
+                                      </li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">10000,0000</a>
+                                      </li>
+                                    </div><!-- /.col-md-2 -->
+
+                                    <div class="col-md-3 rate">
+
+                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">Any</a></li>
+                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">50,000</a></li>
+                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">500,000</a></li>
+                                      <li style="padding-left: 45px;"> <a class="dropdown-item" href="#">5000,000</a>
+                                      </li>
+                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a>
+                                      </li>
+                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a>
+                                      </li>
+                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a>
+                                      </li>
+                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">10000,0000</a>
+                                      </li>
+                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">10000,0000</a>
+                                      </li>
+                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a>
+                                      </li>
+                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a>
+                                      </li>
+                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a>
+                                      </li>
+                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">10000,0000</a>
+                                      </li>
+                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">10000,0000</a>
+                                      </li>
+                                    </div><!-- /.col-md-2 -->
+
+                                  </div><!-- /.row -->
+
+
+                                  <div class="close pt-3" style="text-align:center;">
+                                    <a href=""
+                                      style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
+                                  </div><!-- /.close -->
+
+                                </ul>
                               </div>
-                              <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                                aria-labelledby="pills-contact-tab">
-                              
-                                <div class="row pt-1">
-                                  <div class="col-md-5" style="border: 1px solid rgb(223, 215, 215); text-align:center;">
-                                    <a href="" style="text-decoration: none; color:black; font-size:small;">Office</a>
-                                  </div><!-- /.col-md-5 -->
-                                  <div class="col-md-5"
-                                    style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
-                                    <a href="" style="text-decoration: none; color:black;  font-size:small;">Shop</a>
-                                  </div><!-- /.col-md-5 -->
-                                </div><!-- /.row -->
-  
-                                <div class="row pt-3">
-                                  <div class="col-md-5" style="border: 1px solid rgb(223, 215, 215); text-align:center;">
-                                    <a href="" style="text-decoration: none; color:black; font-size:small;">Warehouse</a>
-                                  </div><!-- /.col-md-5 -->
-                                  <div class="col-md-5"
-                                    style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
-                                    <a href="" style="text-decoration: none; color:black;  font-size:small;">Factory</a>
-                                  </div><!-- /.col-md-5 -->
-                                </div><!-- /.row -->
-  
-                                <div class="row pt-3">
-                                  <div class="col-md-5" style="border: 1px solid rgb(223, 215, 215); text-align:center;">
-                                    <a href="" style="text-decoration: none; color:black; font-size:small;">Building</a>
-                                  </div><!-- /.col-md-5 -->
-                                  <div class="col-md-5"
-                                    style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
-                                    <a href="" style="text-decoration: none; color:black;  font-size:small;">Others</a>
-                                  </div><!-- /.col-md-5 -->
-                                </div><!-- /.row -->
-  
-                                <div class="row pt-3">
-                                  <div class="col-md-5" style="text-align:end;">
-                                    <a href="" style="text-decoration: none; color:black; font-size:small;">Reset</a>
-                                  </div><!-- /.col-md-5 -->
-                                  <div class="col-md-5" style="text-align:end;">
-                                    <a href="" style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
-                                  </div><!-- /.col-md-5 -->
-                                </div>
-  
+                            </div><!-- /.col-md-2 -->
+                            <div class="col-sm-6 col-md-2 col-lg-2 xhme">
+                              <div class="dropdown marla">
+                                <button
+                                  style="border:1px solid gray; padding: 6px 57px; border-radius: 0; margin-left: -36px;background-color:white;"
+                                  class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                  data-bs-toggle="dropdown" aria-expanded="false">
+                                  <p style="font-size: xx-small; margin-bottom:0; margin-left:-65px;"
+                                    class="text-muted">
+                                    AREA(MARLA)</p> <span style="margin-left:-47px;"> <span>0</span> <span>to
+                                      Any</span></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="width: 19rem;">
+                                  <p
+                                    style="text-align: center; font-size:small; background-color:lightgray;padding:8px;">
+                                    Change area unit (Marla)</p>
+                                  <div class="row text-center">
+                                    <div class="col-md-6">
+                                      <h6 style="font-size: small!important; ">MIN:</h6>
+                                    </div><!-- /.col-md-6 -->
+                                    <div class="col-md-6">
+                                      <h6 style="font-size: small!important;">MAX:</h6>
+                                    </div><!-- /.col-md-6 -->
+                                  </div><!-- /.row -->
+
+                                  <div class="row text-center"
+                                    style="justify-content:space-evenly; align-items:center;">
+                                    <div class="col-md-2 text-muted"
+                                      style="border: 1px solid rgb(177, 170, 170);border-radius:5px;padding:5px 34px; ">
+                                      <h6 style="font-size: small!important; ">0</h6>
+                                    </div><!-- /.col-md-2 -->
+                                    <div class="col-md-2 text-muted"
+                                      style="border: 1px solid rgb(177, 170, 170);border-radius:5px;padding:5px 34px; ">
+                                      <h6 style="font-size: small!important;">Any</h6>
+                                    </div><!-- /.col-md-2 -->
+                                  </div><!-- /.row -->
+
+
+                                  <div class="row  pt-3 ">
+                                    <div class="col-md-3 amount">
+                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">0</a></li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">2</a></li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">3</a></li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">4</a></li>
+                                      <li style="padding-left: 28px;"> <a class="dropdown-item" href="#">5</a></li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">6</a></li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">7</a></li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">8</a></li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">9</a></li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">10</a></li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">11</a></li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">12</a></li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">13</a></li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">14</a></li>
+
+                                    </div><!-- /.col-md-2 -->
+
+                                    <div class="col-md-3 rate">
+
+                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">Any</a></li>
+                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">2</a></li>
+                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">3</a></li>
+                                      <li style="padding-left: 45px;"> <a class="dropdown-item" href="#">4</a></li>
+                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5</a></li>
+                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">6</a></li>
+                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">7</a></li>
+                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">8</a></li>
+                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">9</a></li>
+                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">10</a></li>
+                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">11</a></li>
+                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">12</a></li>
+                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">13</a></li>
+                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">14</a></li>
+                                    </div><!-- /.col-md-2 -->
+                                  </div><!-- /.row -->
+                                  <div class="close pt-3" style="text-align:center;">
+                                    <a href=""
+                                      style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
+                                  </div><!-- /.close -->
+
+                                </ul>
                               </div>
-                            </div>
-  
-                          </ul>
-                        </div>
-                      </div><!-- /.col-md-2 -->
-  
-                      <div class="col-md-2">
-                        <div class="dropdown ">
-                          <button style="border:1px solid gray; padding: 6px 74px; border-radius: 0; margin-left: -33px;background-color:white;"
-                            class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <p style="font-size: xx-small; margin-bottom:0; margin-left:-78px;" class="text-muted">
-                              PRICE(PKR)</p> <span style="margin-left:-47px;"> <span>0</span> <span>to Any</span> </span>
-                          </button>
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="width: 20rem;">
-                           <p style="text-align: center; font-size:small; background-color:lightgray;padding:8px;">Change Currency (PKR)</p>
-                           <div class="row text-center">
-                            <div class="col-md-6">
-                              <h6 style="font-size: small!important; ">MIN:</h6>
-                            </div><!-- /.col-md-6 -->
-                            <div class="col-md-6">
-                              <h6 style="font-size: small!important;">MAX:</h6>
-                            </div><!-- /.col-md-6 -->
-                           </div><!-- /.row -->
-                           
-                           <div class="row text-center" style="justify-content:space-evenly; align-items:center;">
-                            <div class="col-md-2 text-muted" style="border: 1px solid rgb(177, 170, 170);border-radius:5px;padding:5px 34px; ">
-                              <h6 style="font-size: small!important; ">0</h6>
                             </div><!-- /.col-md-2 -->
-                            <div class="col-md-2 text-muted" style="border: 1px solid rgb(177, 170, 170);border-radius:5px;padding:5px 34px; ">
-                              <h6 style="font-size: small!important;">Any</h6>
+                            <div class="col-sm-4 col-md-2 col-lg-2 xhme">
+                              <div class="dropdown beds">
+                                <button
+                                  style="border:1px solid gray; padding: 6px 74px; border-radius: 0;margin-left: -73px;background-color:white;"
+                                  class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                  data-bs-toggle="dropdown" aria-expanded="false">
+                                  <p style="font-size: xx-small; margin-bottom:0; margin-left:-68px;"
+                                    class="text-muted">BEDS
+                                  </p> <span style="margin-left:-47px;">ALL</span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="width: 10rem;">
+
+
+                                  <div class="row  pt-3 ">
+                                    <div class="col-md-3 amount">
+                                      <li style="padding-left: 45px; background-color:rgb(128, 128, 242)"><a
+                                          class="dropdown-item" href="#">All</a></li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">Studio</a></li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">3</a></li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">4</a></li>
+                                      <li style="padding-left: 28px;"> <a class="dropdown-item" href="#">5</a></li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">6</a></li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">7</a></li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">8</a></li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">9</a></li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">10</a></li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">11</a></li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">12</a></li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">13</a></li>
+                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">14</a></li>
+
+                                    </div><!-- /.col-md-2 -->
+
+
+                                  </div><!-- /.row -->
+                                  <div class="close pt-3" style="text-align:center;">
+                                    <a href=""
+                                      style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
+                                  </div><!-- /.close -->
+
+                                </ul>
+                              </div>
                             </div><!-- /.col-md-2 -->
-                           </div><!-- /.row -->
-  
-                           <div class="row  pt-3 ">
-                            <div class="col-md-3 amount" >
-                             
-                                <li style="padding-left: 45px;" ><a class="dropdown-item" href="#">0</a></li>
-                                <li style="padding-left: 28px;"><a class="dropdown-item" href="#">50,000</a></li>
-                                <li style="padding-left: 28px;"><a class="dropdown-item" href="#">500,000</a></li>
-                                <li style="padding-left: 28px;"> <a class="dropdown-item" href="#">5000,000</a></li>
-                                <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a></li>
-                                <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a></li>
-                                <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a></li>
-                                <li style="padding-left: 28px;"><a class="dropdown-item" href="#">10000,0000</a></li>
-                                <li style="padding-left: 28px;"><a class="dropdown-item" href="#">10000,0000</a></li>
-                                <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a></li>
-                                <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a></li>
-                                <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a></li>
-                                <li style="padding-left: 28px;"><a class="dropdown-item" href="#">10000,0000</a></li>
-                                <li style="padding-left: 28px;"><a class="dropdown-item" href="#">10000,0000</a></li>
-                            </div><!-- /.col-md-2 -->
-  
-                            <div class="col-md-3 rate">
-                             
-                              <li style="padding-left: 45px;"><a class="dropdown-item" href="#">Any</a></li>
-                              <li style="padding-left: 45px;"><a class="dropdown-item" href="#">50,000</a></li>
-                                <li style="padding-left: 45px;"><a class="dropdown-item" href="#">500,000</a></li>
-                                <li style="padding-left: 45px;"> <a class="dropdown-item" href="#">5000,000</a></li>
-                                <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a></li>
-                                <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a></li>
-                                <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a></li>
-                                <li style="padding-left: 45px;"><a class="dropdown-item" href="#">10000,0000</a></li>
-                                <li style="padding-left: 45px;"><a class="dropdown-item" href="#">10000,0000</a></li>
-                                <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a></li>
-                                <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a></li>
-                                <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a></li>
-                                <li style="padding-left: 45px;"><a class="dropdown-item" href="#">10000,0000</a></li>
-                                <li style="padding-left: 45px;"><a class="dropdown-item" href="#">10000,0000</a></li>
-                          </div><!-- /.col-md-2 -->
-                          
-                            </div><!-- /.row -->
-                        
-                         
-                              <div class="close pt-3" style="text-align:center;">
-                                <a href="" style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
-                              </div><!-- /.close -->
-                                
-                          </ul>
+                          </div><!-- /.row -->
                         </div>
-                      </div><!-- /.col-md-2 -->
-                      <div class="col-md-2">
-                        <div class="dropdown ">
-                          <button style="border:1px solid gray; padding: 6px 74px; border-radius: 0; margin-left: -40px;background-color:white;"
-                            class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <p style="font-size: xx-small; margin-bottom:0; margin-left:-65px;" class="text-muted">
-                              AREA(MARLA)</p> <span style="margin-left:-47px;"> <span>0</span> <span>to Any</span></span>
-                          </button>
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="width: 19rem;">
-                            <p style="text-align: center; font-size:small; background-color:lightgray;padding:8px;">Change area unit (Marla)</p>
-                            <div class="row text-center">
-                             <div class="col-md-6">
-                               <h6 style="font-size: small!important; ">MIN:</h6>
-                             </div><!-- /.col-md-6 -->
-                             <div class="col-md-6">
-                               <h6 style="font-size: small!important;">MAX:</h6>
-                             </div><!-- /.col-md-6 -->
-                            </div><!-- /.row -->
-                            
-                            <div class="row text-center" style="justify-content:space-evenly; align-items:center;">
-                             <div class="col-md-2 text-muted" style="border: 1px solid rgb(177, 170, 170);border-radius:5px;padding:5px 34px; ">
-                               <h6 style="font-size: small!important; ">0</h6>
-                             </div><!-- /.col-md-2 -->
-                             <div class="col-md-2 text-muted" style="border: 1px solid rgb(177, 170, 170);border-radius:5px;padding:5px 34px; ">
-                               <h6 style="font-size: small!important;">Any</h6>
-                             </div><!-- /.col-md-2 -->
-                            </div><!-- /.row -->
-   
-                         
-                             <div class="row  pt-3 ">
-                               <div class="col-md-3 amount" >
-                                 <li style="padding-left: 45px;" ><a class="dropdown-item" href="#">0</a></li>
-                                   <li style="padding-left: 28px;" ><a class="dropdown-item" href="#">2</a></li>
-                                   <li style="padding-left: 28px;"><a class="dropdown-item" href="#">3</a></li>
-                                   <li style="padding-left: 28px;"><a class="dropdown-item" href="#">4</a></li>
-                                   <li style="padding-left: 28px;"> <a class="dropdown-item" href="#">5</a></li>
-                                   <li style="padding-left: 28px;"><a class="dropdown-item" href="#">6</a></li>
-                                   <li style="padding-left: 28px;"><a class="dropdown-item" href="#">7</a></li>
-                                   <li style="padding-left: 28px;"><a class="dropdown-item" href="#">8</a></li>
-                                   <li style="padding-left: 28px;"><a class="dropdown-item" href="#">9</a></li>
-                                   <li style="padding-left: 28px;"><a class="dropdown-item" href="#">10</a></li>
-                                   <li style="padding-left: 28px;"><a class="dropdown-item" href="#">11</a></li>
-                                   <li style="padding-left: 28px;"><a class="dropdown-item" href="#">12</a></li>
-                                   <li style="padding-left: 28px;"><a class="dropdown-item" href="#">13</a></li>
-                                   <li style="padding-left: 28px;"><a class="dropdown-item" href="#">14</a></li>
-                                
-                               </div><!-- /.col-md-2 -->
-     
-                               <div class="col-md-3 rate">
-                                
-                                 <li style="padding-left: 45px;"><a class="dropdown-item" href="#">Any</a></li>
-                                 <li style="padding-left: 45px;"><a class="dropdown-item" href="#">2</a></li>
-                                   <li style="padding-left: 45px;"><a class="dropdown-item" href="#">3</a></li>
-                                   <li style="padding-left: 45px;"> <a class="dropdown-item" href="#">4</a></li>
-                                   <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5</a></li>
-                                   <li style="padding-left: 45px;"><a class="dropdown-item" href="#">6</a></li>
-                                   <li style="padding-left: 45px;"><a class="dropdown-item" href="#">7</a></li>
-                                   <li style="padding-left: 45px;"><a class="dropdown-item" href="#">8</a></li>
-                                   <li style="padding-left: 45px;"><a class="dropdown-item" href="#">9</a></li>
-                                   <li style="padding-left: 45px;"><a class="dropdown-item" href="#">10</a></li>
-                                   <li style="padding-left: 45px;"><a class="dropdown-item" href="#">11</a></li>
-                                   <li style="padding-left: 45px;"><a class="dropdown-item" href="#">12</a></li>
-                                   <li style="padding-left: 45px;"><a class="dropdown-item" href="#">13</a></li>
-                                   <li style="padding-left: 45px;"><a class="dropdown-item" href="#">14</a></li>
-                             </div><!-- /.col-md-2 -->
-                               </div><!-- /.row -->
-                               <div class="close pt-3" style="text-align:center;">
-                                <a href="" style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
-                              </div><!-- /.close -->
-                                 
-                           </ul>
-                        </div>
-                      </div><!-- /.col-md-2 -->
-                      <div class="col-md-2">
-                        <div class="dropdown ">
-                          <button style="border:1px solid gray; padding: 6px 74px; border-radius: 0;margin-left: -51px;background-color:white;"
-                            class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <p style="font-size: xx-small; margin-bottom:0; margin-left:-68px;" class="text-muted">BEDS
-                            </p> <span style="margin-left:-47px;">ALL</span>
-                          </button>
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="width: 10rem;">
-  
-                         
-                             <div class="row  pt-3 ">
-                               <div class="col-md-3 amount" >
-                                 <li style="padding-left: 45px; background-color:rgb(128, 128, 242)" ><a class="dropdown-item" href="#">All</a></li>
-                                   <li style="padding-left: 28px;" ><a class="dropdown-item" href="#">Studio</a></li>
-                                   <li style="padding-left: 28px;"><a class="dropdown-item" href="#">3</a></li>
-                                   <li style="padding-left: 28px;"><a class="dropdown-item" href="#">4</a></li>
-                                   <li style="padding-left: 28px;"> <a class="dropdown-item" href="#">5</a></li>
-                                   <li style="padding-left: 28px;"><a class="dropdown-item" href="#">6</a></li>
-                                   <li style="padding-left: 28px;"><a class="dropdown-item" href="#">7</a></li>
-                                   <li style="padding-left: 28px;"><a class="dropdown-item" href="#">8</a></li>
-                                   <li style="padding-left: 28px;"><a class="dropdown-item" href="#">9</a></li>
-                                   <li style="padding-left: 28px;"><a class="dropdown-item" href="#">10</a></li>
-                                   <li style="padding-left: 28px;"><a class="dropdown-item" href="#">11</a></li>
-                                   <li style="padding-left: 28px;"><a class="dropdown-item" href="#">12</a></li>
-                                   <li style="padding-left: 28px;"><a class="dropdown-item" href="#">13</a></li>
-                                   <li style="padding-left: 28px;"><a class="dropdown-item" href="#">14</a></li>
-                                
-                               </div><!-- /.col-md-2 -->
-     
-                           
-                               </div><!-- /.row -->
-                               <div class="close pt-3" style="text-align:center;">
-                                <a href="" style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
-                              </div><!-- /.close -->
-                                 
-                           </ul>
-                        </div>
-                      </div><!-- /.col-md-2 -->
-                    </div><!-- /.row -->
+                      </div>
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                          style="background-color:rgba(41,43,43,255);">
+                          <a href="" class="opt text-white">Less Options</a>
+
+
+
+                          <a href="" class="cur">Change Currency</a>
+                          <a href="" class="area">Change Area Unit</a>
+                          <a href="">Reset Search</a>
+                        </button>
+                      </h2>
+                    </div>
+
                   </div>
-                </div>
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne" style="background-color:rgba(41,43,43,255);">
-                    <a href="" class="opt text-white">Less Options</a>
-  
-  
-                    
-                    <a href="" class="cur">Change Currency</a>
-                    <a href="" class="area">Change Area Unit</a>
-                    <a href="">Reset Search</a>
-                  </button>
-                </h2>
-              </div>
-  
-            </div>
-  
+
+                </div><!-- /.lower-carosuel -->
+
+
+              </div><!-- /.col-md-8 -->
+
+              <div class="col-lg-3 pop-wrap" style="background-color: rgba(239,241,240,255); margin:0 0 0 85px;">
+                <div class="popular-wrapper">
+
+
+
+                  <div class="row">
+                    <div class="col-md-3 " style=" display:block; background-color: rgba(239,241,240,255); ">
+                      <h6>Popular Cities</h6>
+                    </div><!-- /.col-md-3 -->
+                  </div><!-- /.row -->
+
+                  <div class="row">
+                    <div class="col-md-3 text-center bg-white">
+                      <a href=""><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+                    </div><!-- /.col-md-3 -->
+                  </div><!-- /.row -->
+
+                  <div class="row">
+                    <div class="col-md-2"
+                      style="  background-color: rgba(239,241,240,255); padding-top:16px; padding-left:16px;">
+                      <p>Sargodha</p>
+                    </div><!-- /.col-md-2 -->
+                    <div class="col-md-1" style="  background-color: rgba(239,241,240,255);padding-top:16px;">
+                      <p>(639)</p>
+                    </div><!-- /.col-md-2 -->
+                  </div><!-- /.row -->
+
+                  <div class="row">
+                    <div class="col-md-2" style="  background-color: rgba(239,241,240,255);padding-left:16px;">
+                      <p>Sargodha</p>
+                    </div><!-- /.col-md-2 -->
+                    <div class="col-md-1" style="  background-color: rgba(239,241,240,255);">
+                      <p>(639)</p>
+                    </div><!-- /.col-md-2 -->
+                  </div><!-- /.row -->
+
+                  <div class="row">
+                    <div class="col-md-2" style="  background-color: rgba(239,241,240,255);padding-left:16px;">
+                      <p>Sargodha</p>
+                    </div><!-- /.col-md-2 -->
+                    <div class="col-md-1" style="  background-color: rgba(239,241,240,255);">
+                      <p>(639)</p>
+                    </div><!-- /.col-md-2 -->
+                  </div><!-- /.row -->
+
+                  <div class="row">
+                    <div class="col-md-2" style="  background-color: rgba(239,241,240,255);padding-left:16px;">
+                      <p>Sargodha</p>
+                    </div><!-- /.col-md-2 -->
+                    <div class="col-md-1" style="  background-color: rgba(239,241,240,255);">
+                      <p>(639)</p>
+                    </div><!-- /.col-md-2 -->
+                  </div><!-- /.row -->
+
+                  <div class="row">
+                    <div class="col-md-2" style="  background-color: rgba(239,241,240,255);padding-left:16px;">
+                      <p>Sargodha</p>
+                    </div><!-- /.col-md-2 -->
+                    <div class="col-md-1" style="  background-color: rgba(239,241,240,255);">
+                      <p>(639)</p>
+                    </div><!-- /.col-md-2 -->
+                  </div><!-- /.row -->
+
+                  <div class="row">
+                    <div class="col-md-2" style="  background-color: rgba(239,241,240,255);padding-left:16px;">
+                      <p>Sargodha</p>
+                    </div><!-- /.col-md-2 -->
+                    <div class="col-md-1" style="  background-color: rgba(239,241,240,255);">
+                      <p>(639)</p>
+                    </div><!-- /.col-md-2 -->
+                  </div><!-- /.row -->
+
+                  <div class="row">
+                    <div class="col-md-2" style="  background-color: rgba(239,241,240,255);padding-left:16px;">
+                      <p>Sargodha</p>
+                    </div><!-- /.col-md-2 -->
+                    <div class="col-md-1" style="  background-color: rgba(239,241,240,255);">
+                      <p>(639)</p>
+                    </div><!-- /.col-md-2 -->
+                  </div><!-- /.row -->
+
+                  <div class="row">
+                    <div class="col-md-2" style="  background-color: rgba(239,241,240,255);padding-left:16px;">
+                      <p>Sargodha</p>
+                    </div><!-- /.col-md-2 -->
+                    <div class="col-md-1" style="  background-color: rgba(239,241,240,255);">
+                      <p>(639)</p>
+                    </div><!-- /.col-md-2 -->
+                  </div><!-- /.row -->
+
+                  <div class="row">
+                    <div class="col-md-2" style="  background-color: rgba(239,241,240,255);padding-left:16px;">
+                      <p>Sargodha</p>
+                    </div><!-- /.col-md-2 -->
+                    <div class="col-md-1" style="  background-color: rgba(239,241,240,255);">
+                      <p>(639)</p>
+                    </div><!-- /.col-md-2 -->
+                  </div><!-- /.row -->
+                  <div class="row">
+                    <div class="col-md-3 text-center bg-white">
+                      <a href=""><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    </div><!-- /.col-md-3 -->
+                  </div><!-- /.row -->
+
+
+                </div><!-- /.popular-wrapper -->
+              </div><!-- /.col-md-4 -->
+            </div><!-- /.row -->
+
+
           </div><!-- /.container -->
         </div><!-- /.worth-wraper -->
       </div><!-- /.main-carusuol-wrapper -->
 
-     
+
 
       <div class="lead-text pt-5 pb-3 ">
         <div class="container">
@@ -742,6 +954,731 @@
         </div><!-- /.container -->
       </div><!-- /.lead-text -->
 
+      <div class="product-promotional-wrapper">
+        <div class="container">
+          <div class="row m-0">
+            <div class="col-xsm-6 col-sm-6 col-md-6 col-lg-3">
+              <div class="row">
+                <div class="col-md-4 machine">
+                  <img src="assets/oil-mining.png" alt="">
+                </div><!-- /.col-md-4 -->
+                <div class="col-md-8 invst">
+                  <h5>New <br> Projects</h5>
+                  <p class="text-muted">The best Investment <br> opportunities</p>
+                </div><!-- /.col-md-8 -->
+              </div><!-- /.row -->
+            </div><!-- /.col-md-3 -->
+
+            <div class="col-sm-6 col-md-6 col-lg-3">
+              <div class="row">
+                <div class="col-md-4 machine">
+                  <img src="assets/accounting.png" alt="">
+                </div><!-- /.col-md-4 -->
+                <div class="col-md-8 invst">
+                  <h5>Home Loan<br>Calculator</h5>
+                  <p class="text-muted">Find affordable loan <br>packages</p>
+                </div><!-- /.col-md-8 -->
+              </div><!-- /.row -->
+            </div><!-- /.col-md-3 -->
+
+            <div class="col-sm-6 col-md-6 col-lg-3">
+              <div class="row">
+                <div class="col-md-4 machine">
+                  <img src="assets/search.png" alt="">
+                </div><!-- /.col-md-4 -->
+                <div class="col-md-8 invst">
+                  <h5>Home Loan<br>Calculator</h5>
+                  <p class="text-muted">Find affordable loan <br>packages</p>
+                </div><!-- /.col-md-8 -->
+              </div><!-- /.row -->
+            </div><!-- /.col-md-3 -->
+
+            <div class="col-sm-6 col-md-6 col-lg-3">
+              <div class="row">
+                <div class="col-md-4 machine">
+                  <img src="assets/map.png" alt="">
+                </div><!-- /.col-md-4 -->
+                <div class="col-md-8 invst">
+                  <h5>Home Loan<br>Calculator</h5>
+                  <p class="text-muted">Find affordable loan <br>packages</p>
+                </div><!-- /.col-md-8 -->
+              </div><!-- /.row -->
+            </div><!-- /.col-md-3 -->
+          </div><!-- /.row -->
+
+
+          <div class="row mt-5">
+
+            <div class="col-sm-6 col-md-6 col-lg-3">
+              <div class="row">
+                <div class="col-md-4 machine">
+                  <img src="assets/index.jpg" alt="">
+                </div><!-- /.col-md-4 -->
+                <div class="col-md-8 invst">
+                  <h5>New <br> Projects</h5>
+                  <p class="text-muted">The best Investment <br> opportunities</p>
+                </div><!-- /.col-md-8 -->
+              </div><!-- /.row -->
+            </div><!-- /.col-md-3 -->
+
+            <div class="col-sm-6 col-md-6 col-lg-3">
+              <div class="row">
+                <div class="col-md-4 machine">
+                  <img src="assets/calculator.png" alt="">
+                </div><!-- /.col-md-4 -->
+                <div class="col-md-8 invst">
+                  <h5>Home Loan<br>Calculator</h5>
+                  <p class="text-muted">Find affordable loan <br>packages</p>
+                </div><!-- /.col-md-8 -->
+              </div><!-- /.row -->
+            </div><!-- /.col-md-3 -->
+
+            <div class="col-sm-6 col-md-6 col-lg-3">
+              <div class="row">
+                <div class="col-md-4 machine">
+                  <img src="assets/apartments.png" alt="">
+                </div><!-- /.col-md-4 -->
+                <div class="col-md-8 invst">
+                  <h5>Home Loan<br>Calculator</h5>
+                  <p class="text-muted">Find affordable loan <br>packages</p>
+                </div><!-- /.col-md-8 -->
+              </div><!-- /.row -->
+            </div><!-- /.col-md-3 -->
+
+            <div class="col-sm-6 col-md-6 col-lg-3">
+              <div class="row">
+                <div class="col-md-4 machine">
+                  <img src="assets/trending.png" alt="">
+                </div><!-- /.col-md-4 -->
+                <div class="col-md-8 invst">
+                  <h5>Home Loan<br>Calculator</h5>
+                  <p class="text-muted">Find affordable loan <br>packages</p>
+                </div><!-- /.col-md-8 -->
+              </div><!-- /.row -->
+            </div><!-- /.col-md-3 -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </div><!-- /.product-promotional-wrapper -->
+
+      <div class="lead-text pt-5 pb-3 ">
+        <div class="container">
+          <h3 class="pt-3">Recent Searches</h3>
+        </div><!-- /.container -->
+      </div><!-- /.lead-text -->
+
+      <div class="locational-wrapper pb-3">
+        <div class="container">
+          <div class=" row content-wrapper">
+            <div class="col-md-6">
+              <a href="" title="Home for sale"><i class="fa fa-search" aria-hidden="true"></i> Home for Sale</a>
+              <h6 title="Home for sale">All area sizes</h6>
+              <a href="" title="Home for sale" class="text-dark text-muted pt-3"><i class="fa fa-map-marker"
+                  aria-hidden="true"></i> Rawalpindi</a>
+              <a href="" title="Home for sale" class="text-dark text-muted price"><i class="fa fa-tag"
+                  aria-hidden="true"></i> Any price</a>
+            </div><!-- /.col-md-6-->
+
+          </div><!-- /.row -->
+
+
+        </div><!-- /.container -->
+
+      </div><!-- /.locational-wrapper -->
+
+
+      <div class="projects-wrapper ">
+        <div class="container"
+          style="background-color: rgba(231,241,252,255); border:1px solid transparent; border-radius: 8px;">
+          <div class="row pt-4 pb-5">
+            <div class="col-md-3">
+              <h3>Zameen Projects</h3>
+            </div><!-- /.col-md-4 -->
+            <div class="col-md-2  bg-danger trd">
+              <a href=""><img src="assets/trending.png" alt=""> <span style="padding-left:8px;">Trending</span> </a>
+            </div><!-- /.col-md-4 -->
+          </div><!-- /.row -->
+
+          <div class="owl-carousel owl-theme" id="projects">
+            <div class="item">
+
+              <div class="card">
+                <img src="assets/river garden.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6>PKR 20.7 Lakh to 10.69 Crore</h6>
+                  <h5>Dolce Mall & Signature Residency, Karachi</h5>
+                  <p class="card-text text-muted">Karachi, Bahria Town Karachi</p>
+                  <a href=""><img src="assets/apartments.png" alt="">
+                    <p>Flats</p>
+                  </a>
+                  <a href=""><img src="assets/volume.png" alt="">
+                    <p>180 sqft to 1852 sqft</p>
+                  </a>
+                  <span>HOT</span>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="item">
+              <div class="card">
+                <img src="assets/card 2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6>PKR 20.7 Lakh to 10.69 Crore</h6>
+                  <h5>Dolce Mall & Signature Residency, Karachi</h5>
+                  <p class="card-text text-muted">Karachi, Bahria Town Karachi</p>
+                  <a href=""><img src="assets/apartments.png" alt="">
+                    <p>Flats</p>
+                  </a>
+                  <a href=""><img src="assets/volume.png" alt="">
+                    <p>180 sqft to 1852 sqft</p>
+                  </a>
+                  <span>HOT</span>
+                </div>
+              </div>
+
+            </div>
+            <div class="item">
+              <div class="card">
+                <img src="assets/card 5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6>PKR 20.7 Lakh to 10.69 Crore</h6>
+                  <h5>Dolce Mall & Signature Residency, Karachi</h5>
+                  <p class="card-text text-muted">Karachi, Bahria Town Karachi</p>
+                  <a href=""><img src="assets/apartments.png" alt="">
+                    <p>Flats</p>
+                  </a>
+                  <a href=""><img src="assets/volume.png" alt="">
+                    <p>180 sqft to 1852 sqft</p>
+                  </a>
+                  <span>HOT</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img src="assets/card 4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6>PKR 20.7 Lakh to 10.69 Crore</h6>
+                  <h5>Dolce Mall & Signature Residency, Karachi</h5>
+                  <p class="card-text text-muted">Karachi, Bahria Town Karachi</p>
+                  <a href=""><img src="assets/apartments.png" alt="">
+                    <p>Flats</p>
+                  </a>
+                  <a href=""><img src="assets/volume.png" alt="">
+                    <p>180 sqft to 1852 sqft</p>
+                  </a>
+                  <span>HOT</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img src="assets/card 5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6>PKR 20.7 Lakh to 10.69 Crore</h6>
+                  <h5>Dolce Mall & Signature Residency, Karachi</h5>
+                  <p class="card-text text-muted">Karachi, Bahria Town Karachi</p>
+                  <a href=""><img src="assets/apartments.png" alt="">
+                    <p>Flats</p>
+                  </a>
+                  <a href=""><img src="assets/volume.png" alt="">
+                    <p>180 sqft to 1852 sqft</p>
+                  </a>
+                  <span>HOT</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img src="assets/card 6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6>PKR 20.7 Lakh to 10.69 Crore</h6>
+                  <h5>Dolce Mall & Signature Residency, Karachi</h5>
+                  <p class="card-text text-muted">Karachi, Bahria Town Karachi</p>
+                  <a href=""><img src="assets/apartments.png" alt="">
+                    <p>Flats</p>
+                  </a>
+                  <a href=""><img src="assets/volume.png" alt="">
+                    <p>180 sqft to 1852 sqft</p>
+                  </a>
+                  <span>HOT</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img src="assets/card 4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6>PKR 20.7 Lakh to 10.69 Crore</h6>
+                  <h5>Dolce Mall & Signature Residency, Karachi</h5>
+                  <p class="card-text text-muted">Karachi, Bahria Town Karachi</p>
+                  <a href=""><img src="assets/apartments.png" alt="">
+                    <p>Flats</p>
+                  </a>
+                  <a href=""><img src="assets/volume.png" alt="">
+                    <p>180 sqft to 1852 sqft</p>
+                  </a>
+                  <span>HOT</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img src="assets/card 4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6>PKR 20.7 Lakh to 10.69 Crore</h6>
+                  <h5>Dolce Mall & Signature Residency, Karachi</h5>
+                  <p class="card-text text-muted">Karachi, Bahria Town Karachi</p>
+                  <a href=""><img src="assets/apartments.png" alt="">
+                    <p>Flats</p>
+                  </a>
+                  <a href=""><img src="assets/volume.png" alt="">
+                    <p>180 sqft to 1852 sqft</p>
+                  </a>
+                  <span>HOT</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div><!-- /.container -->
+      </div><!-- /.projects-wrapper -->
+
+      <div class="lead-text pt-5 pb-3 ">
+        <div class="container">
+          <h3 class="pt-3">Titanium Agencies</h3>
+        </div><!-- /.container -->
+      </div><!-- /.lead-text -->
+
+      <div class="Titanium-wrapper">
+        <div class="container">
+          <div class="container">
+            <div class="owl-carousel owl-theme" id="titanium">
+              <div class="item">
+
+                <div class="card">
+                  <img src="assets/sadiq and ameen.jpeg" class="card-img-top" alt="...">
+
+                </div>
+
+              </div>
+
+              <div class="item">
+                <div class="card">
+                  <img src="assets/geb-security-services-logo-png-transparent.png" class="card-img-top" alt="...">
+
+                </div>
+
+              </div>
+              <div class="item">
+                <div class="card">
+                  <img src="assets/kirmani.jpeg" class="card-img-top" alt="...">
+
+                </div>
+              </div>
+              <div class="item">
+                <div class="card">
+                  <img src="assets/mbs.jpg" class="card-img-top" alt="...">
+
+                </div>
+              </div>
+              <div class="item">
+                <div class="card">
+                  <img src="assets/milatary estate.png" class="card-img-top" alt="...">
+
+                </div>
+              </div>
+              <div class="item">
+                <div class="card">
+                  <img src="assets/unf.png" class="card-img-top" alt="...">
+
+                </div>
+              </div>
+              <div class="item">
+                <div class="card">
+                  <img src="assets/al asar.jpeg" class="card-img-top" alt="...">
+
+                </div>
+              </div>
+              <div class="item">
+                <div class="card">
+                  <img src="assets/zamil.jpg" class="card-img-top" alt="...">
+
+                </div>
+              </div>
+
+            </div>
+          </div><!-- /.container -->
+        </div><!-- /.container -->
+      </div>
+
+      <div class="lead-text pt-5 pb-3 ">
+        <div class="container">
+          <h3 class="pt-3">Featured Agencies</h3>
+        </div><!-- /.container -->
+      </div><!-- /.lead-text -->
+
+      <div class="featured-wrapper">
+        <div class="container">
+
+          <div class="owl-carousel owl-theme" id="featured">
+            <div class="item">
+
+              <div class="card">
+                <img src="assets/sadiq and ameen.jpeg" class="card-img-top" alt="...">
+                <img src="assets/al asar.jpeg" class="card-img-top" alt="...">
+                <img src="assets/geb-security-services-logo-png-transparent.png" class="card-img-top" alt="...">
+
+              </div>
+
+            </div>
+
+            <div class="item">
+              <div class="card">
+                <img src="assets/sadiq and ameen.jpeg" class="card-img-top" alt="...">
+                <img src="assets/al asar.jpeg" class="card-img-top" alt="...">
+                <img src="assets/geb-security-services-logo-png-transparent.png" class="card-img-top" alt="...">
+
+              </div>
+
+            </div>
+            <div class="item">
+              <div class="card">
+                <img src="assets/sadiq and ameen.jpeg" class="card-img-top" alt="...">
+                <img src="assets/al asar.jpeg" class="card-img-top" alt="...">
+                <img src="assets/geb-security-services-logo-png-transparent.png" class="card-img-top" alt="...">
+
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img src="assets/sadiq and ameen.jpeg" class="card-img-top" alt="...">
+                <img src="assets/al asar.jpeg" class="card-img-top" alt="...">
+                <img src="assets/geb-security-services-logo-png-transparent.png" class="card-img-top" alt="...">
+
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img src="assets/sadiq and ameen.jpeg" class="card-img-top" alt="...">
+                <img src="assets/al asar.jpeg" class="card-img-top" alt="...">
+                <img src="assets/geb-security-services-logo-png-transparent.png" class="card-img-top" alt="...">
+
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img src="assets/sadiq and ameen.jpeg" class="card-img-top" alt="...">
+                <img src="assets/al asar.jpeg" class="card-img-top" alt="...">
+                <img src="assets/geb-security-services-logo-png-transparent.png" class="card-img-top" alt="...">
+
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img src="assets/sadiq and ameen.jpeg" class="card-img-top" alt="...">
+                <img src="assets/al asar.jpeg" class="card-img-top" alt="...">
+                <img src="assets/geb-security-services-logo-png-transparent.png" class="card-img-top" alt="...">
+
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img src="assets/sadiq and ameen.jpeg" class="card-img-top" alt="...">
+                <img src="assets/al asar.jpeg" class="card-img-top" alt="...">
+                <img src="assets/geb-security-services-logo-png-transparent.png" class="card-img-top" alt="...">
+
+              </div>
+
+
+            </div>
+          </div><!-- /.container -->
+        </div><!-- /.container -->
+      </div>
+
+
+      <div class="lead-text pt-5 pb-3 ">
+        <div class="container">
+          <h3 class="pt-3">Zameen Social</h3>
+        </div><!-- /.container -->
+      </div><!-- /.lead-text -->
+
+      <div class="social-wrapper">
+        <div class="container">
+          <div class="row" style="display: flex; justify-content:space-between; align-items:center;">
+
+            <div class="col-md-4">
+
+              <div class="row">
+                <div class="col-md-5">
+                  <a href=""><img src="assets/megaphone.png" alt=""><span
+                      style="margin-left: 16px; color:#000; font-weight:bold;" class="text-muted">News</span></a>
+                </div><!-- /.col-md-6 -->
+                <div class="col-md-7">
+                  <a href=""> <span style="padding-right: 8px;">View All</span> <i class="fa fa-angle-right"
+                      aria-hidden="true" style="padding-right:16px;"></i><span style="padding-left: 16px;"><img
+                        src="assets/blog.png" alt=""></span><span
+                      style="padding-left: 8px; color:#000; font-weight:bold; " class="text-muted">Blogs</span></a>
+
+                </div><!-- /.col-md-6 -->
+              </div><!-- /.row -->
+
+            </div><!-- /.col-md-4 -->
+
+            <div class="col-md-4">
+
+              <div class="row">
+                <div class="col-md-7">
+                  <a href=""> <span style="padding-right: 8px;">View All</span> <i class="fa fa-angle-right"
+                      aria-hidden="true" style="padding-right:16px;"></i><span style="padding-left: 12px;"><img
+                        src="assets/blog.png" alt=""></span><span
+                      style="padding-left: 8px; color:#000; font-weight:bold; " class="text-muted">Forums</span></a>
+                </div><!-- /.col-md-6 -->
+                <div class="col-md-5" style="padding-left: 56px;">
+                  <a href=""> <span style="padding-right: 8px; ">View All</span> <i class="fa fa-angle-right"
+                      aria-hidden="true"></i></a>
+
+                </div><!-- /.col-md-6 -->
+              </div><!-- /.row -->
+
+            </div><!-- /.col-md-5 -->
+
+          </div><!-- /.row -->
+
+        </div><!-- /.container -->
+      </div><!-- /.social-wrapper -->
+
+
+      <div class="social-wrapper-inner pt-4">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-3">
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="assets/project it.png" alt="">
+                </div><!-- /.col-md-3 -->
+                <div class="col-md-8">
+                  <p style="line-height:normal; margin-bottom:6px;margin-left:16px;font-size:small ;">IT poject in final
+                    <br> stages of completion...</p>
+                  <span style="font-size:small ; margin-left:16px;" class="text-muted">22 October 2022</span>
+                </div><!-- /.col-md-8 -->
+              </div><!-- /.row -->
+
+              <div class="row pt-4">
+                <div class="col-md-3">
+                  <img src="assets/Pak China.jpg" alt="">
+                </div><!-- /.col-md-3 -->
+                <div class="col-md-8">
+                  <p style="line-height:normal; margin-bottom:6px; margin-left:16px; font-size:small ;">Pak China for
+                    <br> early launch of ML-1...</p>
+                  <span style="font-size:small ;margin-left:16px;" class="text-muted">22 October 2022</span>
+                </div><!-- /.col-md-8 -->
+              </div><!-- /.row -->
+
+
+            </div><!-- /.col-md-3 -->
+
+            <div class="col-md-7 sites">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="assets/rc 1.jpg" alt="">
+                  <p style="font-size: small;">Where to splurge and where <br> to save when Decorating Yo...</p>
+                </div><!-- /.col-md-4 -->
+
+                <div class="col-md-4">
+                  <img src="assets/model rc 2.jpeg" alt="">
+                  <p style="font-size: small;">Most Popular Areas With <br> Residential Polots for Sale in...</p>
+                </div><!-- /.col-md-4 -->
+
+                <div class="col-md-4">
+                  <img src="assets/rc3.jpg" alt="">
+                  <p style="font-size: small;">Most Popular Golf Courses in <br> Lahore</p>
+                </div><!-- /.col-md-4 -->
+
+              </div><!-- /.row -->
+            </div><!-- /.col-md-7 -->
+
+            <div class="col-md-2 topic">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 pt-3 " style="background-color: rgba(230,230,230,255); border-radius:5px;">
+                    <h6>Buying Property</h6>
+                    <p>11k Topics <span>2 New Topics</span></p>
+                  </div><!-- /.col-md-12 -->
+
+                  <div class="col-md-12 pt-3 mt-3" style="background-color: rgba(230,230,230,255);border-radius:5px;">
+                    <h6>Renting Property</h6>
+                    <p>556k Topics <span>2 New Topics</span></p>
+                  </div><!-- /.col-md-12 -->
+                </div><!-- /.row -->
+              </div><!-- /.container -->
+            </div><!-- /.col-md-2 -->
+
+            <!-- /.row -->
+
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+
+      </div><!-- /.social-wrapper-inner -->
+
+      <div class="lead-text pt-5 pb-3 ">
+        <div class="container">
+          <h3 class="pt-3">Popular Locations</h3>
+        </div><!-- /.container -->
+      </div><!-- /.lead-text -->
+
+      <div class="popular-wrapper">
+        <div class="container">
+          <div class="container">
+            <h5 class="pt-3 text-muted">Popular Cities to Buy Properties</h5>
+       
+            <hr >
+            <div class="row">
+              <div class="col-md-4">
+                <h6 class="pb-3 text-muted" >HOUSES</h6>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+              </div><!-- /.col-md-4 -->
+
+              <div class="col-md-4">
+             <br><br>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p style="margin-bottom: 8px;">House for sale DHA Defence (8544)</p>
+                <a href="" style="text-decoration: none;">View all Cities</a>
+              </div><!-- /.col-md-4 -->
+
+              <div class="col-md-4">
+                <h6 class="pb-3 text-muted">FLAT AND APPARTMENTS</h6>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p style="margin-bottom: 8px;">House for sale DHA Defence (8544)</p>
+                <a href="" style="text-decoration: none;">View all Cities</a>
+              </div><!-- /.col-md-4 -->
+            </div><!-- /.row -->
+          </div><!-- /.container -->
+        </div><!-- /.container -->
+      </div><!-- /.popular-wrapper -->
+
+      <div class="popular-wrapper">
+        <div class="container">
+          <div class="container">
+            <h5 class="pt-3 text-muted">Most Popular Location for Homes</h5>
+            <hr >
+            <div class="row">
+              <div class="col-md-4">
+                <h6 class="pb-3 text-muted" >LAHORE</h6>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+              </div><!-- /.col-md-4 -->
+
+              <div class="col-md-4">
+                <h6 class="pb-3 text-muted" >KARACHI</h6>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+              </div><!-- /.col-md-4 -->
+
+              <div class="col-md-4">
+                <h6 class="pb-3 text-muted">ISLAMABAD/RAWALPINDI</h6>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+              </div><!-- /.col-md-4 -->
+            </div><!-- /.row -->
+          </div><!-- /.container -->
+        </div><!-- /.container -->
+      </div><!-- /.popular-wrapper -->
+
+      
+      <div class="popular-wrapper">
+        <div class="container">
+          <div class="container">
+            <h5 class="pt-3 text-muted">Popular Cities to Rent Properties</h5>
+       
+            <hr >
+            <div class="row">
+              <div class="col-md-4">
+                <h6 class="pb-3 text-muted" >HOUSES</h6>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+             
+              </div><!-- /.col-md-4 -->
+
+              <div class="col-md-4">
+             <br><br>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+               >
+              </div><!-- /.col-md-4 -->
+
+              <div class="col-md-4">
+                <h6 class="pb-3 text-muted">FLAT AND APPARTMENTS</h6>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+                <p>House for sale DHA Defence (8544)</p>
+            
+              </div><!-- /.col-md-4 -->
+            </div><!-- /.row -->
+          </div><!-- /.container -->
+        </div><!-- /.container -->
+      </div><!-- /.popular-wrapper -->
+
+
+      <div class="app-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 pt-5">
+            <h2>Get the Zameen App</h2>
+            <h6>Buy and Rent Property faster and <br> better using our app. </h6>
+          </div><!-- /.col-md-4 -->
+          <div class="col-md-4">
+            <img src="assets/mob_app-removebg-preview.png" alt="">
+          </div><!-- /.col-md-4 -->
+
+          <div class="col-md-4">
+         <a href="" type="button"><i class="fa fa-apple" aria-hidden="true"></i><span><p>Download on the </p> <h6>App Store</h6></span></a>
+         <a href=""  type="button" ><i class="fa fa-play" aria-hidden="true"></i><span><p>Get it on the </p> <h6>Google Play</h6></span></a>
+          </div><!-- /.col-md-4 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+      </div><!-- /.app-wrapper -->
 
     </main>
 

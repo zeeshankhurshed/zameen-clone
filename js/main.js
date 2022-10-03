@@ -15,6 +15,8 @@ function show(){
 $(document).ready(function(){
     var projects = $("#projects");
     var titanium = $("#titanium");
+  
+
     projects.owlCarousel({
         loop:true,
         margin:10,
@@ -30,7 +32,7 @@ $(document).ready(function(){
                 items:3
             },
             1000:{
-                items:4
+                items:3.5
             }
         }
     })
@@ -53,4 +55,29 @@ $(document).ready(function(){
             }
         }
     })
+});
+
+
+$(document).ready(function(){
+
+    var featured = $("#featured");
+featured.owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    autoplay:true,
+    autotimeout:2000,
+    dots:false,
+    responsive:{
+        0:{
+            items:15
+        },
+        600:{
+            items:15
+        },
+        1000:{
+            items:15
+        }
+    }
+})
 });

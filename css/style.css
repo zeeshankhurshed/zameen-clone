@@ -268,20 +268,30 @@
     left:396px;
     top: 15px;
 }
-.main-carosuel-inner-wrapper {
-    position: relative;
-}
+/* .main-carosuel-inner-wrapper {
 
-.main-carusuol-wrapper img {
-    width: 100%;
-    height: 500px;
+} */
+
+.main-carusuol-wrapper  {
+    
+    height: 500px; 
+    background: url('../assets/main\ carosuel.png') no-repeat 0 0;
+background-size: cover;
 }
-.worth-wraper{
-  position: relative;
-  top: -410px;
-  left: -20px;
+.worth-wraper h4{
+display: flex;
+justify-content: center;
  
 }
+.worth-wraper .brp{
+    display: flex;
+    justify-content: space-evenly;
+     
+ }
+ .worth-wraper .brp .btn{
+ border-radius: 0;
+     
+ }
 .worth-wraper .btn-outline-warning {
     color: black;
     border-color: white;
@@ -313,6 +323,7 @@
     border-radius: 0;
     border: 1px solid gray;
     margin-left: -24px;
+    width: 126%;
 }
 .worth-wraper .location .form-control::-webkit-input-placeholder {
    font-size: xx-small;
@@ -414,11 +425,23 @@ position: relative;
 	border-bottom: 14px solid black;
     display: block;
     position: absolute;
-    top: 290px;
-    left: 167px;
+    top: 274px;
+    left: 256px;
  
 }
-/* 
+.popular-wrapper {
+    /* position: relative;
+    top: -688px;
+    left: 870px;     */
+    border: 1px solid transparent;
+   font-size: small;
+   border-radius: 5px;
+}
+.popular-wrapper .row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 .product-promotional-wrapper .machine {
     background: rgb(230, 224, 227);
     width: 89px;
@@ -465,12 +488,59 @@ height: 50px;
 }
 .locational-wrapper .content-wrapper .price i {
     transform: rotateY(200deg);
+} 
+
+.projects-wrapper .trd {
+    border: 1px solid transparent;
+    border-radius: 27px;
+}
+.projects-wrapper .trd a  {
+    text-decoration: none;
+    color: white; 
+    }
+.projects-wrapper .trd a img {
+width: 40px;
+height: 40px;
 }
 .projects-wrapper .card {
-    width: 15rem;
+    width: 18.5rem;
+    background-color: transparent;
     position: relative;
+    border: none;
 }
+.projects-wrapper .card img {
+   border-radius: 12px;
+    height: 200px;
 
+}
+.projects-wrapper .card h6  {
+font-size: smaller;
+ 
+ }
+ .projects-wrapper .card h5 {
+    font-size: small;
+    font-weight: bold;
+     
+     }
+     .projects-wrapper .card p {
+        font-size: small;
+    }
+    .projects-wrapper .card a{
+        text-decoration: none;
+        color: #000;
+        font-size: small;
+        display: flex;
+   }
+         .projects-wrapper .card a img {
+     width: 25px;
+     height: 25px;
+          
+}
+.projects-wrapper .card a p {
+    padding-left: 8px;
+    font-weight: bold;
+         
+}
 .projects-wrapper .card span {
   
     background-color: red;
@@ -478,24 +548,24 @@ height: 50px;
     padding: 2px 20px;
     font-size: small;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 8px;
+    left: 8px;
     color: white;
 }
 
-.owl-nav {
+.projects-wrapper .owl-nav {
     position: relative;
 }
-.owl-nav .owl-prev span {
+.projects-wrapper .owl-nav .owl-prev span {
     position: absolute;
-    top: -135px;
+    top: -274px;
     left: -16px;
 font-size: xx-large;
 }
-.owl-nav .owl-next span {
+.projects-wrapper .owl-nav .owl-next span {
     position: absolute;
-    top: -135px;
-    right: 6px;
+    top: -274px;
+    right: -20px;
 font-size: xx-large;
 }
 .Titanium-wrapper #titanium .card{
@@ -504,6 +574,430 @@ font-size: xx-large;
 .Titanium-wrapper #titanium .card img {
     width: 150px;
 }
+.Titanium-wrapper .owl-nav .owl-prev span {
+    position: absolute;
+    top: 33px;
+    left: -16px;
+font-size: xx-large;
+}
+.Titanium-wrapper .owl-nav .owl-next span {
+    position: absolute;
+    top: 33px;
+    right: -20px;
+font-size: xx-large;
+}
+.featured-wrapper #featured .card{
+    border: none;
+}
+.featured-wrapper #featured .card img {
+    width: 60px;
+    border: 1px solid black;
+}
+.featured-wrapper .owl-nav .owl-prev span {
+    position: absolute;
+    top: 33px;
+    left: -32px;
+font-size: xx-large;
+}
+.featured-wrapper .owl-nav .owl-next span {
+    position: absolute;
+    top: 33px;
+    right: -20px;
+font-size: xx-large;
+}
+.social-wrapper a {
+   text-decoration: none;
+}
+
+.social-wrapper img {
+    width: 20px;
+    height: 20px;
+}
+.social-wrapper-inner img {
+    width: 70px;
+    height: 70px;
+    border-radius: 12px;
+}
+.social-wrapper-inner .sites img {
+    width: 200px;
+    height: 130px;
+}
+.social-wrapper-inner .topic h6 {
+    font-size: small;
+    font-weight: bold;
+}
+.social-wrapper-inner .topic p {
+    font-size: x-small;
+    
+}
+.popular-wrapper p {
+    line-height: 10px;
+}
+.app-wrapper h2 {
+    color: #00a651;
+}
+.app-wrapper a{
+    text-decoration: none;
+    font-size: small;
+    background-color: #000;
+    color: white;
+}
 
 
- */
+
+
+
+
+
+
+
+
+@media (min-width: 0px) and (max-width: 575.98px) { 
+    .upper-navbar-wrapper .navbar-nav {
+        font-size: x-small;
+    }
+    .upper-navbar-wrapper .input-group .form-control::-webkit-input-placeholder {
+   font-size: xx-small;
+    }
+    .upper-navbar-wrapper .input-group {
+        margin-right: 45px;
+    }
+    .upper-navbar-wrapper .add  {
+        padding-left: 0;
+        margin: -52px;
+} 
+    .upper-navbar-wrapper .add .btn i {
+        right: 86px;
+      
+} 
+        .upper-navbar-wrapper .add span {
+            font-size: xx-small;
+    } 
+    .upper-navbar-wrapper .urdu {
+        margin-right: -14px;
+        color: black;
+    }
+    
+    .carosuel-up::after {
+        display: none;
+    }
+    .rent::before {
+        display: none;
+    }
+    .agents::before {
+    display: none;
+    }
+    .proj::before {
+        display: none;
+    }
+    .main-carusuol-wrapper .worth-wraper h4 {
+        font-size: smaller;
+    }
+    .worth-wraper .wth{
+        margin: 0 0 0 0 !important;
+        }
+       
+    .worth-wraper .brp{
+        display: grid;
+        justify-content: space-evenly;
+         
+     }
+     .worth-wraper .brp .btm{
+    padding-bottom: 16px;
+         
+     }
+     .worth-wraper .city  {
+       display: flex;
+       justify-content: center;
+    }
+     .worth-wraper .city .btn {
+        margin-left: 12px;
+        padding: 6px 9px!important;
+    }
+    .worth-wraper .city .btn p {
+      font-size: x-small!important;
+      margin-left: -55px!important;
+    }
+    .worth-wraper .city .btn  span{
+        font-size: x-small!important;
+     
+      }
+      .worth-wraper .location  {
+        display: none;
+        
+      }
+    .worth-wraper .find .btn {
+       display: none;
+       
+     }
+     .lower-carosuel .shme  {
+        display: flex!important;
+        justify-content: center!important;
+     }
+     .lower-carosuel .xhme  {
+        display: flex!important;
+        justify-content: center!important;
+        margin-top: 16px;
+        margin-left: 35px!important;
+     }
+     .lower-carosuel .hme .btn {
+        padding: 6px 40px!important;
+        margin-left: 32px!important;
+     }
+     .pop-wrap{
+        display: none;
+    }
+    .lead-text {
+        text-align: center;
+    }
+  
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .upper-navbar-wrapper .urdu {
+     
+        color: black;
+    }
+   
+    .carosuel-up::after {
+        display: none;
+    }
+    .rent::before {
+        display: none;
+    }
+    .agents::before {
+        display: none;
+        }
+        .proj::before {
+            display: none;
+        }
+        .worth-wraper .wth{
+         margin: 0 0 0 0 !important;
+         }
+        
+        .worth-wraper .brp{
+            display: flex;
+            justify-content: space-evenly;
+             
+         }
+         .worth-wraper .city .btn {
+            margin-left: 12px;
+            padding: 6px 9px!important;
+        }
+        .worth-wraper .city .btn p {
+          font-size: x-small!important;
+          margin-left: -55px!important;
+        }
+        .worth-wraper .city .btn  span{
+            font-size: x-small!important;
+         
+          }
+        .worth-wraper .find .btn {
+            margin-left: -30px!important;
+             width: 84px;
+           
+         }
+         .lower-carosuel .shme  {
+            display: flex!important;
+            justify-content: center!important;
+         }
+         .lower-carosuel .xhme  {
+            display: flex!important;
+            justify-content: center!important;
+            margin-top: 16px;
+            margin-left: 35px!important;
+         }
+         .lower-carosuel .hme .btn {
+            padding: 6px 40px!important;
+            margin-left: 32px!important;
+         }
+         .pop-wrap{
+            display: none;
+        }
+        .lead-text {
+            text-align: center;
+        }
+      
+    }
+
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .upper-navbar-wrapper .navbar-nav {
+        font-size: x-small;
+    }
+    .upper-navbar-wrapper .input-group .form-control::-webkit-input-placeholder {
+   font-size: xx-small;
+    }
+    .upper-navbar-wrapper .input-group {
+        margin-right: 45px;
+    }
+    .upper-navbar-wrapper .add  {
+        padding-left: 0;
+        margin: -52px;
+} 
+    .upper-navbar-wrapper .add .btn i {
+        right: 86px;
+} 
+        .upper-navbar-wrapper .add span {
+            font-size: xx-small;
+    } 
+    .upper-navbar-wrapper .urdu {
+        margin-right: -14px;
+    }
+  
+    .carosuel-up::after {
+        display: none;
+    }
+    .rent::before {
+        display: none;
+    }
+    .agents::before {
+        display: none;
+        }
+        .proj::before {
+            display: none;
+        }
+        .worth-wraper .brp{
+            display: flex;
+            justify-content: space-evenly;
+             
+         }
+         .worth-wraper .location .form-control {
+        
+            width: 137%;
+        }
+       
+        .worth-wraper .city .btn {
+            margin-left: 12px;
+            padding: 6px 34px!important;
+        }
+        .worth-wraper .city .btn p {
+          font-size: x-small!important;
+          margin-left: -55px!important;
+        }
+        .worth-wraper .city .btn  span{
+            font-size: x-small!important;
+         
+          }
+        .worth-wraper .find .btn {
+            margin-left: -30px!important;
+             width: 137px;
+           
+         }
+         .lower-carosuel .hme .btn {
+            padding: 6px 40px!important;
+            margin-left: 36px!important;
+         }
+         .lower-carosuel .any .btn {
+            padding: 6px 57px!important;
+            margin-left: 3px!important;
+         }
+         .lower-carosuel .marla .btn {
+            padding: 6px 57px!important;
+            margin-left: -27px!important;
+         }
+         .lower-carosuel .beds .btn {
+            padding: 6px 66px!important;
+            margin-left: -60px!important;
+         }
+         .pop-wrap{
+            display: none;
+        }
+        .lead-text {
+            text-align: center;
+        }
+      
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .upper-navbar-wrapper .navbar-nav {
+        font-size: x-small;
+    }
+    .upper-navbar-wrapper .input-group .form-control::-webkit-input-placeholder {
+   font-size: xx-small;
+    }
+    .upper-navbar-wrapper .input-group {
+        margin-right: 45px;
+    }
+    .upper-navbar-wrapper .add  {
+        padding-left: 0;
+        margin: -52px;
+} 
+    .upper-navbar-wrapper .add .btn i {
+        right: 86px;
+} 
+        .upper-navbar-wrapper .add span {
+            font-size: xx-small;
+    } 
+    .upper-navbar-wrapper .urdu {
+        margin-right: -14px;
+    }
+    
+    .carosuel-up::after {
+        display: none;
+    }
+    .agents::before {
+        display: none;
+        }
+        .proj::before {
+            display: none;
+        }
+        .worth-wraper .brp{
+            display: flex;
+            justify-content: space-evenly;
+             
+         }
+         .worth-wraper .find {
+            padding-left:0 ;
+        }
+        .worth-wraper .city .btn {
+            padding: 6px 16px!important;
+        }
+        .worth-wraper .find .btn {
+           margin-left: -36px!important;
+            width: 132px;
+          
+        }
+        .lower-carosuel .hme .btn {
+            padding: 6px 31px!important;
+            margin-left: 15px!important;
+         }
+         .lower-carosuel .any .btn {
+            padding: 6px 45px!important;
+            margin-left: 1px!important;
+         }
+         .lower-carosuel .marla .btn {
+            padding: 6px 45px!important;
+            margin-left: -39px!important;
+         }
+         .pop-wrap{
+            display: none;
+        }
+ }
+
+@media (min-width: 1200px) and (max-width: 1299.98px) { 
+    .lower-carosuel .rwp {
+        justify-content: space-evenly;
+        
+    }
+    .worth-wraper .find {
+        padding-left:0 ;
+    }
+    .worth-wraper .city .btn {
+        margin-left: 14px;
+    }
+    .pop-wrap{
+        display: none;
+    }
+ }
+
+@media (min-width: 1300px) and (max-width: 1499.98px) { 
+   
+    .lower-carosuel .rwp {
+        justify-content: space-around;
+    }
+ }
+
