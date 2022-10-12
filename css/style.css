@@ -283,11 +283,31 @@ display: flex;
 justify-content: center;
  
 }
-.worth-wraper .brp{
+/* .main-carusuol-wrapper .worth-wraper .nav-tabs .nav-item.show .nav-link, .nav-tabs  .buy-check:focus+.buy, .buy:focus {
+    display: none;
+}
+.main-carusuol-wrapper .worth-wraper .nav-tabs .nav-item.show .nav-link, .nav-tabs  .buy-check:focus+.buy, .buy:focus {
+    display: block;
+}
+.main-carusuol-wrapper .worth-wraper .nav-tabs .nav-item.show .nav-link, .nav-tabs  .rent-check:focus+.rent, .rent:focus {
+    display: none;
+}
+.main-carusuol-wrapper .worth-wraper .nav-tabs .nav-item.show .nav-link, .nav-tabs  .rent-check:focus+.rent, .rent:focus {
+    display: block;
+} */
+.main-carusuol-wrapper .worth-wraper .nav-tabs .nav-item.show .nav-link, .nav-tabs{
     display: flex;
-    justify-content: space-evenly;
-     
- }
+    justify-content: center;
+    margin-left: 90px;
+}
+.main-carusuol-wrapper .worth-wraper .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+    background-color: gray; 
+    color:white; 
+    margin:0 12px;
+    padding:8px 38px; 
+    border-radius: 0;
+
+}
  .worth-wraper .brp .btn{
  border-radius: 0;
      
@@ -425,8 +445,21 @@ position: relative;
 	border-bottom: 14px solid black;
     display: block;
     position: absolute;
-    top: 274px;
-    left: 256px;
+    top: 279px;
+    left: 362px;
+ 
+}
+.carosuel-up-rent::after {
+    content: '';
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 14px solid black;
+    display: block;
+    position: absolute;
+    top: 279px;
+    left: 496px;
  
 }
 .popular-wrapper {
@@ -641,7 +674,151 @@ font-size: xx-large;
     font-size: small;
     background-color: #000;
     color: white;
+    display: flex;
+    padding: 0 16px;
+    height: 45px;
+    border-radius: 8px;
 }
+.app-wrapper a i{
+font-size: xx-large;
+
+padding-top: 8px;
+}
+.app-wrapper a span p{
+font-size: xx-small;
+padding-top: 8px;
+padding-left: 12px;
+margin-bottom: 0;
+    }
+    .app-wrapper a span h6 {
+        padding-left: 12px;
+    }  
+    .app-wrapper .qr  {
+        width: 80px;
+        height: 80px;
+    }
+    .curved-arrow {
+     position: relative;
+    }
+    .curved-arrow a {
+        position: absolute;
+        right: 256px;
+        bottom: 48px;
+    
+       }
+.curved-arrow img {
+    width: 40px;
+    
+}
+.partner-wrapper img{
+    /* width: 220px; */
+    height: 50px;
+}
+.footer {
+    background-color: rgba(31,31,31,255);
+}
+.footer .head a{
+   text-decoration: none;
+   color: white;
+  
+   
+}
+.footer .head a i{
+ padding-right: 16px;
+    
+ }
+ .footer .head img{
+    padding-right: 16px;
+       height: 40px;
+    }
+    .copy-right .row{
+      display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    }
+    .copy-right .top {
+        display: flex;
+        justify-content: end;
+    
+    }
+    .copy-right a {
+        text-decoration: none;
+    }
+    .copy-right a span {
+         color:white;
+    }
+    .copy-right a i {
+        padding: 2px 6px;
+         font-size:xx-large; 
+         border:1px solid transparent;
+          border-radius:50%; 
+          background-color:gray;
+          margin-left: 8px;
+    }
+    .floating-wraper {
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+        z-index: 999999;
+    }
+
+    .btn-check:focus+.btn, .btn:focus {
+      
+        box-shadow: none;
+    }
+.floating-wraper .bell  img{
+   background-color:  #00a651;
+   padding: 12px;
+   border-radius: 50%;
+   width: 60px;
+   height: 60px;
+   
+}
+.floating-wraper .btn img {
+ 
+    width: 60px;
+    height: 60px;
+}
+.floating-wraper .modal {
+   top: 460px;
+
+}
+.floating-wraper .modal-dialog {
+
+    width: 100%;
+}
+
+.floating-wraper .modal-dialog {
+    max-width: 100%;
+  
+}
+.floating-wraper .modal-header {
+    border-bottom: none;
+  
+}
+.floating-wraper .modal-body .btn i{
+    background-color: #00a651;
+    padding:16px;
+    border-radius: 50%;
+    margin-top: -16px;
+  
+}
+.floating-wraper .modal-body .notified{
+    font-size:inherit;
+    font-weight: bold;
+    background-color:  #00a651;
+    padding: 12px 24px;
+}
+.floating-wraper .modal-body .later{
+    font-size:inherit;
+    font-weight: bold;
+    color:  #00a651;
+    border: 1px solid #00a651;
+    padding: 12px 48px;
+    margin-left: 16px;
+}
+
 
 
 
@@ -693,6 +870,7 @@ font-size: xx-large;
     .main-carusuol-wrapper .worth-wraper h4 {
         font-size: smaller;
     }
+
     .worth-wraper .wth{
         margin: 0 0 0 0 !important;
         }

@@ -243,7 +243,7 @@
               <ul class="navbar-nav">
                 <li class="nav-item dropdown">
                 <li><a class="dropdown-item text-muted" href="#"> BUY </a></li>
-                <li><a class="dropdown-item text-muted" href="#" style="padding-left: 0;"><i onclick="show()"
+                <li><a class="dropdown-item text-muted" onclick="show()" href="#" style="padding-left: 0;"><i 
                       class="fa fa-angle-right" aria-hidden="true"></i> </a></li>
                 <div class="id d-flex " id="adit">
                   <li><a class="dropdown-item text-muted" href="#">Home</a></li>
@@ -294,540 +294,1674 @@
                   </div><!-- /.col-md-12 -->
                 </div><!-- /.row -->
 
-                <div class="row brp pb-4">
-                  <div class="col-xs-2 col-sm-2 col-md-2  col-lg-2 col-xlg-2 btm">
-                    <button type="button" class="btn btn-outline-warning text-white active "
-                      style="padding:6px 32px; ">BUY</button>
-                  </div><!-- /.col-md-2 -->
-                  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xlg-2 btm">
-                    <button type="button" class="btn btn-outline-warning text-white"
-                      style="padding:6px 28px;">RENT</button>
-                  </div><!-- /.col-md-2 -->
-                  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xlg-2">
-                    <button type="button" class="btn btn-outline-warning text-white"
-                      style="padding:6px 14px;">PROJECTS</button>
-                  </div><!-- /.col-md-2 -->
-                </div><!-- /.row -->
 
-                <div class="lower-carosuel" style="background-color:rgba(41,43,43,255);">
+                <ul class="nav nav-tabs pb-4" id="myTab" role="tablist">
+                  <li class="nav-item " role="presentation">
+                    <a href="" onclick="upShow()" class="nav-link show active "  onmouseleave="upHide()" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                      type="button" role="tab" aria-controls="home" aria-selected="true">BUY</a>
+                      <div class="carosuel-up " id="boxUp"></div>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link " onclick="rentShow()" onmouseleave="rentHide()"  id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                      type="button" role="tab" aria-controls="profile" aria-selected="false">RENT</button>
+                      <div class="carosuel-up-rent" id="boxRent"></div>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                      type="button" role="tab" aria-controls="contact" aria-selected="false">PROJECTS</button>
 
-                  <div class="row pt-2 rwp" style=" justify-content:space-around;">
-                    <div class="col-xsm-2 col-sm-2 col-md-2 col-lg-2" style="padding: 0;">
-                      <div class="dropdown city">
-                        <button
-                          style="border:1px solid gray; padding: 6px 32px; border-radius: 0;background-color:white;"
-                          class="btn bg-white dropdown-toggle" type="button" id="dropdownMenuButton1"
-                          data-bs-toggle="dropdown" aria-expanded="false">
-                          <p style="font-size: xx-small; margin-bottom:0; margin-left:-74px;" class="text-muted">CITY
-                          </p> <span style="font-size:small;">RAWALPINDI</span>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                          <li style="padding:6px;"><a style="padding:18px; width:127px;" class="dropdown-item"
-                              href="#"></a>
-                          </li>
-                          <li><a class="dropdown-item" href="#">Islamabad</a></li>
-                          <li><a class="dropdown-item" href="#">Karachi</a></li>
-                          <li><a class="dropdown-item" href="#">Lahore</a></li>
-                          <li><a class="dropdown-item" href="#">Rawalpindi</a></li>
-                          <li><a class="dropdown-item" href="#">Quetta</a></li>
-                          <li><a class="dropdown-item" href="#">Peshawar</a></li>
-                          <li><a class="dropdown-item" href="#">Karachi</a></li>
-                          <li><a class="dropdown-item" href="#">Lahore</a></li>
-                          <li><a class="dropdown-item" href="#">Rawalpindi</a></li>
-                          <li><a class="dropdown-item" href="#">Quetta</a></li>
-                          <li><a class="dropdown-item" href="#">Peshawar</a></li>
-                        </ul>
-                      </div>
-                    </div><!-- /.col-md-2 -->
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="lower-carosuel" style="background-color:rgba(41,43,43,255);">
+
+                      <div class="row pt-2 rwp" style=" justify-content:space-around;">
+                        <div class="col-xsm-2 col-sm-2 col-md-2 col-lg-2" style="padding: 0;">
+                          <div class="dropdown city">
+                            <button
+                              style="border:1px solid gray; padding: 6px 32px; border-radius: 0;background-color:white;"
+                              class="btn bg-white dropdown-toggle" type="button" id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              <p style="font-size: xx-small; margin-bottom:0; margin-left:-74px;" class="text-muted">
+                                CITY
+                              </p> <span style="font-size:small;">RAWALPINDI</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li style="padding:6px;"><a style="padding:18px; width:127px;" class="dropdown-item"
+                                  href="#"></a>
+                              </li>
+                              <li><a class="dropdown-item" href="#">Islamabad</a></li>
+                              <li><a class="dropdown-item" href="#">Karachi</a></li>
+                              <li><a class="dropdown-item" href="#">Lahore</a></li>
+                              <li><a class="dropdown-item" href="#">Rawalpindi</a></li>
+                              <li><a class="dropdown-item" href="#">Quetta</a></li>
+                              <li><a class="dropdown-item" href="#">Peshawar</a></li>
+                              <li><a class="dropdown-item" href="#">Karachi</a></li>
+                              <li><a class="dropdown-item" href="#">Lahore</a></li>
+                              <li><a class="dropdown-item" href="#">Rawalpindi</a></li>
+                              <li><a class="dropdown-item" href="#">Quetta</a></li>
+                              <li><a class="dropdown-item" href="#">Peshawar</a></li>
+                            </ul>
+                          </div>
+                        </div><!-- /.col-md-2 -->
 
 
-                    <div class="col-xsm-4 col-sm-4 col-md-4 col-lg-4 location">
+                        <div class="col-xsm-4 col-sm-4 col-md-4 col-lg-4 location">
 
-                      <input type="text" class="form-control" placeholder="LOCATION" aria-label="City">
+                          <input type="text" class="form-control" placeholder="LOCATION" aria-label="City">
 
-                    </div><!-- /.col-md-2 -->
-                    <div class="col-xsm-2 col-sm-2 col-md-2 col-lg-2  col-xlg-2 find">
-                      <button type="button" class="btn btn-success btn-lg"
-                        style="font-size: small; font-weight:bold;    margin-left: -41px;">Find</button>
-                    </div><!-- /.col-md-2 -->
-                  </div><!-- /.row -->
+                        </div><!-- /.col-md-2 -->
+                        <div class="col-xsm-2 col-sm-2 col-md-2 col-lg-2  col-xlg-2 find">
+                          <button type="button" class="btn btn-success btn-lg"
+                            style="font-size: small; font-weight:bold;    margin-left: -41px;">Find</button>
+                        </div><!-- /.col-md-2 -->
+                      </div><!-- /.row -->
 
-                  <div class="accordion " id="accordionExample">
-                    <div class="accordion-item" style="background-color: rgba(41,43,43,255);">
+                      <div class="accordion " id="accordionExample">
+                        <div class="accordion-item" style="background-color: rgba(41,43,43,255);">
 
-                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body" style="padding: 0;">
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body" style="padding: 0;">
 
-                          <div class="row pt-2" style="display: flex; justify-content: space-between;
-                          align-items: center;">
-                            <div class="col-sm-6 col-md-2 col-lg-2 shme">
-                              <div class="dropdown hme">
-                                <button
-                                  style="border:1px solid gray; padding: 6px 46px; border-radius: 0; background-color:white; margin-left:24px;"
-                                  class="btn   dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                  data-bs-toggle="dropdown" aria-expanded="false">
-                                  <p style="font-size: xx-small; margin-bottom:0; " class="text-muted">PROPERTY TYPE</p>
-                                  <span style=" font-size:small;">HOME</span>
-                                </button>
-                                <ul class="dropdown-menu" style="min-width: 20rem; padding-left:35px"
-                                  aria-labelledby="dropdownMenuButton1">
+                              <div class="row pt-2" style="display: flex; justify-content: space-between;
+                              align-items: center;">
+                                <div class="col-sm-6 col-md-2 col-lg-2 shme">
+                                  <div class="dropdown hme">
+                                    <button
+                                      style="border:1px solid gray; padding: 6px 46px; border-radius: 0; background-color:white; margin-left:24px;"
+                                      class="btn   dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                      data-bs-toggle="dropdown" aria-expanded="false">
+                                      <p style="font-size: xx-small; margin-bottom:0; " class="text-muted">PROPERTY TYPE
+                                      </p>
+                                      <span style=" font-size:small;">HOME</span>
+                                    </button>
+                                    <ul class="dropdown-menu" style="min-width: 20rem; padding-left:35px"
+                                      aria-labelledby="dropdownMenuButton1">
 
-                                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                                        aria-selected="true" style=" color:#000; background-color: #fff;background-color:white;
-                                      ">Home</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-profile" type="button" role="tab"
-                                        aria-controls="pills-profile" aria-selected="false" style=" color:#000; background-color: #fff;
-                                      ">Plot</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-contact" type="button" role="tab"
-                                        aria-controls="pills-contact" aria-selected="false" style=" color:#000; background-color: #fff;
-                                      ">Commercial</button>
-                                    </li>
-                                  </ul>
-                                  <div class="tab-content" id="pills-tabContent">
-                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                                      aria-labelledby="pills-home-tab">
+                                      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-home" type="button" role="tab"
+                                            aria-controls="pills-home" aria-selected="true" style=" color:#000; background-color: #fff;background-color:white;
+                                          ">Home</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-profile" type="button" role="tab"
+                                            aria-controls="pills-profile" aria-selected="false" style=" color:#000; background-color: #fff;
+                                          ">Plot</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-contact" type="button" role="tab"
+                                            aria-controls="pills-contact" aria-selected="false" style=" color:#000; background-color: #fff;
+                                          ">Commercial</button>
+                                        </li>
+                                      </ul>
+                                      <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                          aria-labelledby="pills-home-tab">
 
-                                      <div class="row pt-">
-                                        <div class="col-md-5"
-                                          style="border: 1px solid rgb(223, 215, 215); text-align:center;">
-                                          <a href=""
-                                            style="text-decoration: none; color:black; font-size:small;">House</a>
-                                        </div><!-- /.col-md-5 -->
-                                        <div class="col-md-5"
-                                          style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
-                                          <a href=""
-                                            style="text-decoration: none; color:black;  font-size:small;">Flat</a>
-                                        </div><!-- /.col-md-5 -->
-                                      </div><!-- /.row -->
+                                          <div class="row pt-">
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">House</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black;  font-size:small;">Flat</a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div><!-- /.row -->
 
-                                      <div class="row pt-3">
-                                        <div class="col-md-5"
-                                          style="border: 1px solid rgb(223, 215, 215); text-align:center;">
-                                          <a href="" style="text-decoration: none; color:black; font-size:small;">Upper
-                                            Portion</a>
-                                        </div><!-- /.col-md-5 -->
-                                        <div class="col-md-5"
-                                          style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
-                                          <a href="" style="text-decoration: none; color:black;  font-size:small;">lower
-                                            Portion</a>
-                                        </div><!-- /.col-md-5 -->
-                                      </div><!-- /.row -->
+                                          <div class="row pt-3">
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Upper
+                                                Portion</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black;  font-size:small;">lower
+                                                Portion</a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div><!-- /.row -->
 
-                                      <div class="row pt-3">
-                                        <div class="col-md-5"
-                                          style="border: 1px solid rgb(223, 215, 215); text-align:center;">
-                                          <a href="" style="text-decoration: none; color:black; font-size:small;">Farm
-                                            House</a>
-                                        </div><!-- /.col-md-5 -->
-                                        <div class="col-md-5"
-                                          style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
-                                          <a href=""
-                                            style="text-decoration: none; color:black;  font-size:small;">Room</a>
-                                        </div><!-- /.col-md-5 -->
-                                      </div><!-- /.row -->
+                                          <div class="row pt-3">
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Farm
+                                                House</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black;  font-size:small;">Room</a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div><!-- /.row -->
 
-                                      <div class="row pt-3">
-                                        <div class="col-md-5"
-                                          style="border: 1px solid rgb(223, 215, 215); text-align:center;">
-                                          <a href="" style="text-decoration: none; color:black; font-size:small;">Pent
-                                            House</a>
-                                        </div><!-- /.col-md-5 -->
+                                          <div class="row pt-3">
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Pent
+                                                House</a>
+                                            </div><!-- /.col-md-5 -->
 
-                                      </div><!-- /.row -->
+                                          </div><!-- /.row -->
 
-                                      <div class="row pt-3">
-                                        <div class="col-md-5" style="text-align:end;">
-                                          <a href=""
-                                            style="text-decoration: none; color:black; font-size:small;">Reset</a>
-                                        </div><!-- /.col-md-5 -->
-                                        <div class="col-md-5" style="text-align:end;">
-                                          <a href=""
-                                            style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
-                                        </div><!-- /.col-md-5 -->
+                                          <div class="row pt-3">
+                                            <div class="col-md-5" style="text-align:end;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Reset</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5" style="text-align:end;">
+                                              <a href=""
+                                                style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div>
+
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                          aria-labelledby="pills-profile-tab">
+
+                                          <div class="row pt-1">
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Residential
+                                                Plot</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black;  font-size:small;">commercial
+                                                Plot</a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div><!-- /.row -->
+
+                                          <div class="row pt-3">
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Agriculture
+                                                Plot</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black;  font-size:small;">Industrial
+                                                Land </a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div><!-- /.row -->
+
+                                          <div class="row pt-3">
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Plot
+                                                File</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black;  font-size:small;">Plot
+                                                Land</a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div><!-- /.row -->
+
+                                          <div class="row pt-3">
+                                            <div class="col-md-5" style="text-align:end;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Reset</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5" style="text-align:end;">
+                                              <a href=""
+                                                style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div>
+
+
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                          aria-labelledby="pills-contact-tab">
+
+                                          <div class="row pt-1">
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Office</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black;  font-size:small;">Shop</a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div><!-- /.row -->
+
+                                          <div class="row pt-3">
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Warehouse</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black;  font-size:small;">Factory</a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div><!-- /.row -->
+
+                                          <div class="row pt-3">
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Building</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black;  font-size:small;">Others</a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div><!-- /.row -->
+
+                                          <div class="row pt-3">
+                                            <div class="col-md-5" style="text-align:end;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Reset</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5" style="text-align:end;">
+                                              <a href=""
+                                                style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div>
+
+                                        </div>
                                       </div>
 
-                                    </div>
-                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                                      aria-labelledby="pills-profile-tab">
-
-                                      <div class="row pt-1">
-                                        <div class="col-md-5"
-                                          style="border: 1px solid rgb(223, 215, 215); text-align:center;">
-                                          <a href=""
-                                            style="text-decoration: none; color:black; font-size:small;">Residential
-                                            Plot</a>
-                                        </div><!-- /.col-md-5 -->
-                                        <div class="col-md-5"
-                                          style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
-                                          <a href=""
-                                            style="text-decoration: none; color:black;  font-size:small;">commercial
-                                            Plot</a>
-                                        </div><!-- /.col-md-5 -->
-                                      </div><!-- /.row -->
-
-                                      <div class="row pt-3">
-                                        <div class="col-md-5"
-                                          style="border: 1px solid rgb(223, 215, 215); text-align:center;">
-                                          <a href=""
-                                            style="text-decoration: none; color:black; font-size:small;">Agriculture
-                                            Plot</a>
-                                        </div><!-- /.col-md-5 -->
-                                        <div class="col-md-5"
-                                          style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
-                                          <a href=""
-                                            style="text-decoration: none; color:black;  font-size:small;">Industrial
-                                            Land </a>
-                                        </div><!-- /.col-md-5 -->
-                                      </div><!-- /.row -->
-
-                                      <div class="row pt-3">
-                                        <div class="col-md-5"
-                                          style="border: 1px solid rgb(223, 215, 215); text-align:center;">
-                                          <a href="" style="text-decoration: none; color:black; font-size:small;">Plot
-                                            File</a>
-                                        </div><!-- /.col-md-5 -->
-                                        <div class="col-md-5"
-                                          style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
-                                          <a href="" style="text-decoration: none; color:black;  font-size:small;">Plot
-                                            Land</a>
-                                        </div><!-- /.col-md-5 -->
-                                      </div><!-- /.row -->
-
-                                      <div class="row pt-3">
-                                        <div class="col-md-5" style="text-align:end;">
-                                          <a href=""
-                                            style="text-decoration: none; color:black; font-size:small;">Reset</a>
-                                        </div><!-- /.col-md-5 -->
-                                        <div class="col-md-5" style="text-align:end;">
-                                          <a href=""
-                                            style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
-                                        </div><!-- /.col-md-5 -->
-                                      </div>
-
-
-                                    </div>
-                                    <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                                      aria-labelledby="pills-contact-tab">
-
-                                      <div class="row pt-1">
-                                        <div class="col-md-5"
-                                          style="border: 1px solid rgb(223, 215, 215); text-align:center;">
-                                          <a href=""
-                                            style="text-decoration: none; color:black; font-size:small;">Office</a>
-                                        </div><!-- /.col-md-5 -->
-                                        <div class="col-md-5"
-                                          style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
-                                          <a href=""
-                                            style="text-decoration: none; color:black;  font-size:small;">Shop</a>
-                                        </div><!-- /.col-md-5 -->
-                                      </div><!-- /.row -->
-
-                                      <div class="row pt-3">
-                                        <div class="col-md-5"
-                                          style="border: 1px solid rgb(223, 215, 215); text-align:center;">
-                                          <a href=""
-                                            style="text-decoration: none; color:black; font-size:small;">Warehouse</a>
-                                        </div><!-- /.col-md-5 -->
-                                        <div class="col-md-5"
-                                          style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
-                                          <a href=""
-                                            style="text-decoration: none; color:black;  font-size:small;">Factory</a>
-                                        </div><!-- /.col-md-5 -->
-                                      </div><!-- /.row -->
-
-                                      <div class="row pt-3">
-                                        <div class="col-md-5"
-                                          style="border: 1px solid rgb(223, 215, 215); text-align:center;">
-                                          <a href=""
-                                            style="text-decoration: none; color:black; font-size:small;">Building</a>
-                                        </div><!-- /.col-md-5 -->
-                                        <div class="col-md-5"
-                                          style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
-                                          <a href=""
-                                            style="text-decoration: none; color:black;  font-size:small;">Others</a>
-                                        </div><!-- /.col-md-5 -->
-                                      </div><!-- /.row -->
-
-                                      <div class="row pt-3">
-                                        <div class="col-md-5" style="text-align:end;">
-                                          <a href=""
-                                            style="text-decoration: none; color:black; font-size:small;">Reset</a>
-                                        </div><!-- /.col-md-5 -->
-                                        <div class="col-md-5" style="text-align:end;">
-                                          <a href=""
-                                            style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
-                                        </div><!-- /.col-md-5 -->
-                                      </div>
-
-                                    </div>
+                                    </ul>
                                   </div>
+                                </div><!-- /.col-md-2 -->
 
-                                </ul>
-                              </div>
-                            </div><!-- /.col-md-2 -->
+                                <div class="col-sm-6 col-md-2 col-lg-2 shme">
+                                  <div class="dropdown any">
+                                    <button
+                                      style="border:1px solid gray; padding: 6px 57px; border-radius: 0;background-color:white; margin-left:3px;"
+                                      class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                      data-bs-toggle="dropdown" aria-expanded="false">
+                                      <p style="font-size: xx-small; margin-bottom:0; margin-left:-78px;"
+                                        class="text-muted">
+                                        PRICE(PKR)</p> <span style="margin-left:-47px;"> <span>0</span> <span>to
+                                          Any</span>
+                                      </span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"
+                                      style="width: 20rem;">
+                                      <p
+                                        style="text-align: center; font-size:small; background-color:lightgray;padding:8px;">
+                                        Change Currency (PKR)</p>
+                                      <div class="row text-center">
+                                        <div class="col-md-6">
+                                          <h6 style="font-size: small!important; ">MIN:</h6>
+                                        </div><!-- /.col-md-6 -->
+                                        <div class="col-md-6">
+                                          <h6 style="font-size: small!important;">MAX:</h6>
+                                        </div><!-- /.col-md-6 -->
+                                      </div><!-- /.row -->
 
-                            <div class="col-sm-6 col-md-2 col-lg-2 shme">
-                              <div class="dropdown any">
-                                <button
-                                  style="border:1px solid gray; padding: 6px 57px; border-radius: 0;background-color:white; margin-left:3px;"
-                                  class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                  data-bs-toggle="dropdown" aria-expanded="false">
-                                  <p style="font-size: xx-small; margin-bottom:0; margin-left:-78px;"
-                                    class="text-muted">
-                                    PRICE(PKR)</p> <span style="margin-left:-47px;"> <span>0</span> <span>to Any</span>
-                                  </span>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="width: 20rem;">
-                                  <p
-                                    style="text-align: center; font-size:small; background-color:lightgray;padding:8px;">
-                                    Change Currency (PKR)</p>
-                                  <div class="row text-center">
-                                    <div class="col-md-6">
-                                      <h6 style="font-size: small!important; ">MIN:</h6>
-                                    </div><!-- /.col-md-6 -->
-                                    <div class="col-md-6">
-                                      <h6 style="font-size: small!important;">MAX:</h6>
-                                    </div><!-- /.col-md-6 -->
-                                  </div><!-- /.row -->
+                                      <div class="row text-center"
+                                        style="justify-content:space-evenly; align-items:center;">
+                                        <div class="col-md-2 text-muted"
+                                          style="border: 1px solid rgb(177, 170, 170);border-radius:5px;padding:5px 34px; ">
+                                          <h6 style="font-size: small!important; ">0</h6>
+                                        </div><!-- /.col-md-2 -->
+                                        <div class="col-md-2 text-muted"
+                                          style="border: 1px solid rgb(177, 170, 170);border-radius:5px;padding:5px 34px; ">
+                                          <h6 style="font-size: small!important;">Any</h6>
+                                        </div><!-- /.col-md-2 -->
+                                      </div><!-- /.row -->
 
-                                  <div class="row text-center"
-                                    style="justify-content:space-evenly; align-items:center;">
-                                    <div class="col-md-2 text-muted"
-                                      style="border: 1px solid rgb(177, 170, 170);border-radius:5px;padding:5px 34px; ">
-                                      <h6 style="font-size: small!important; ">0</h6>
-                                    </div><!-- /.col-md-2 -->
-                                    <div class="col-md-2 text-muted"
-                                      style="border: 1px solid rgb(177, 170, 170);border-radius:5px;padding:5px 34px; ">
-                                      <h6 style="font-size: small!important;">Any</h6>
-                                    </div><!-- /.col-md-2 -->
-                                  </div><!-- /.row -->
+                                      <div class="row  pt-3 ">
+                                        <div class="col-md-3 amount">
 
-                                  <div class="row  pt-3 ">
-                                    <div class="col-md-3 amount">
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">0</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">50,000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">500,000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"> <a class="dropdown-item"
+                                              href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item"
+                                              href="#">10000,0000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item"
+                                              href="#">10000,0000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item"
+                                              href="#">10000,0000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item"
+                                              href="#">10000,0000</a>
+                                          </li>
+                                        </div><!-- /.col-md-2 -->
 
-                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">0</a></li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">50,000</a></li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">500,000</a></li>
-                                      <li style="padding-left: 28px;"> <a class="dropdown-item" href="#">5000,000</a>
-                                      </li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a>
-                                      </li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a>
-                                      </li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a>
-                                      </li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">10000,0000</a>
-                                      </li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">10000,0000</a>
-                                      </li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a>
-                                      </li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a>
-                                      </li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a>
-                                      </li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">10000,0000</a>
-                                      </li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">10000,0000</a>
-                                      </li>
-                                    </div><!-- /.col-md-2 -->
+                                        <div class="col-md-3 rate">
 
-                                    <div class="col-md-3 rate">
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">Any</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">50,000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">500,000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"> <a class="dropdown-item"
+                                              href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item"
+                                              href="#">10000,0000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item"
+                                              href="#">10000,0000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item"
+                                              href="#">10000,0000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item"
+                                              href="#">10000,0000</a>
+                                          </li>
+                                        </div><!-- /.col-md-2 -->
 
-                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">Any</a></li>
-                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">50,000</a></li>
-                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">500,000</a></li>
-                                      <li style="padding-left: 45px;"> <a class="dropdown-item" href="#">5000,000</a>
-                                      </li>
-                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a>
-                                      </li>
-                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a>
-                                      </li>
-                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a>
-                                      </li>
-                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">10000,0000</a>
-                                      </li>
-                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">10000,0000</a>
-                                      </li>
-                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a>
-                                      </li>
-                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a>
-                                      </li>
-                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a>
-                                      </li>
-                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">10000,0000</a>
-                                      </li>
-                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">10000,0000</a>
-                                      </li>
-                                    </div><!-- /.col-md-2 -->
-
-                                  </div><!-- /.row -->
-
-
-                                  <div class="close pt-3" style="text-align:center;">
-                                    <a href=""
-                                      style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
-                                  </div><!-- /.close -->
-
-                                </ul>
-                              </div>
-                            </div><!-- /.col-md-2 -->
-                            <div class="col-sm-6 col-md-2 col-lg-2 xhme">
-                              <div class="dropdown marla">
-                                <button
-                                  style="border:1px solid gray; padding: 6px 57px; border-radius: 0; margin-left: -36px;background-color:white;"
-                                  class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                  data-bs-toggle="dropdown" aria-expanded="false">
-                                  <p style="font-size: xx-small; margin-bottom:0; margin-left:-65px;"
-                                    class="text-muted">
-                                    AREA(MARLA)</p> <span style="margin-left:-47px;"> <span>0</span> <span>to
-                                      Any</span></span>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="width: 19rem;">
-                                  <p
-                                    style="text-align: center; font-size:small; background-color:lightgray;padding:8px;">
-                                    Change area unit (Marla)</p>
-                                  <div class="row text-center">
-                                    <div class="col-md-6">
-                                      <h6 style="font-size: small!important; ">MIN:</h6>
-                                    </div><!-- /.col-md-6 -->
-                                    <div class="col-md-6">
-                                      <h6 style="font-size: small!important;">MAX:</h6>
-                                    </div><!-- /.col-md-6 -->
-                                  </div><!-- /.row -->
-
-                                  <div class="row text-center"
-                                    style="justify-content:space-evenly; align-items:center;">
-                                    <div class="col-md-2 text-muted"
-                                      style="border: 1px solid rgb(177, 170, 170);border-radius:5px;padding:5px 34px; ">
-                                      <h6 style="font-size: small!important; ">0</h6>
-                                    </div><!-- /.col-md-2 -->
-                                    <div class="col-md-2 text-muted"
-                                      style="border: 1px solid rgb(177, 170, 170);border-radius:5px;padding:5px 34px; ">
-                                      <h6 style="font-size: small!important;">Any</h6>
-                                    </div><!-- /.col-md-2 -->
-                                  </div><!-- /.row -->
+                                      </div><!-- /.row -->
 
 
-                                  <div class="row  pt-3 ">
-                                    <div class="col-md-3 amount">
-                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">0</a></li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">2</a></li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">3</a></li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">4</a></li>
-                                      <li style="padding-left: 28px;"> <a class="dropdown-item" href="#">5</a></li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">6</a></li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">7</a></li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">8</a></li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">9</a></li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">10</a></li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">11</a></li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">12</a></li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">13</a></li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">14</a></li>
+                                      <div class="close pt-3" style="text-align:center;">
+                                        <a href=""
+                                          style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
+                                      </div><!-- /.close -->
 
-                                    </div><!-- /.col-md-2 -->
+                                    </ul>
+                                  </div>
+                                </div><!-- /.col-md-2 -->
+                                <div class="col-sm-6 col-md-2 col-lg-2 xhme">
+                                  <div class="dropdown marla">
+                                    <button
+                                      style="border:1px solid gray; padding: 6px 57px; border-radius: 0; margin-left: -36px;background-color:white;"
+                                      class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                      data-bs-toggle="dropdown" aria-expanded="false">
+                                      <p style="font-size: xx-small; margin-bottom:0; margin-left:-65px;"
+                                        class="text-muted">
+                                        AREA(MARLA)</p> <span style="margin-left:-47px;"> <span>0</span> <span>to
+                                          Any</span></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"
+                                      style="width: 19rem;">
+                                      <p
+                                        style="text-align: center; font-size:small; background-color:lightgray;padding:8px;">
+                                        Change area unit (Marla)</p>
+                                      <div class="row text-center">
+                                        <div class="col-md-6">
+                                          <h6 style="font-size: small!important; ">MIN:</h6>
+                                        </div><!-- /.col-md-6 -->
+                                        <div class="col-md-6">
+                                          <h6 style="font-size: small!important;">MAX:</h6>
+                                        </div><!-- /.col-md-6 -->
+                                      </div><!-- /.row -->
 
-                                    <div class="col-md-3 rate">
-
-                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">Any</a></li>
-                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">2</a></li>
-                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">3</a></li>
-                                      <li style="padding-left: 45px;"> <a class="dropdown-item" href="#">4</a></li>
-                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5</a></li>
-                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">6</a></li>
-                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">7</a></li>
-                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">8</a></li>
-                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">9</a></li>
-                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">10</a></li>
-                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">11</a></li>
-                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">12</a></li>
-                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">13</a></li>
-                                      <li style="padding-left: 45px;"><a class="dropdown-item" href="#">14</a></li>
-                                    </div><!-- /.col-md-2 -->
-                                  </div><!-- /.row -->
-                                  <div class="close pt-3" style="text-align:center;">
-                                    <a href=""
-                                      style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
-                                  </div><!-- /.close -->
-
-                                </ul>
-                              </div>
-                            </div><!-- /.col-md-2 -->
-                            <div class="col-sm-4 col-md-2 col-lg-2 xhme">
-                              <div class="dropdown beds">
-                                <button
-                                  style="border:1px solid gray; padding: 6px 74px; border-radius: 0;margin-left: -73px;background-color:white;"
-                                  class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                  data-bs-toggle="dropdown" aria-expanded="false">
-                                  <p style="font-size: xx-small; margin-bottom:0; margin-left:-68px;"
-                                    class="text-muted">BEDS
-                                  </p> <span style="margin-left:-47px;">ALL</span>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="width: 10rem;">
+                                      <div class="row text-center"
+                                        style="justify-content:space-evenly; align-items:center;">
+                                        <div class="col-md-2 text-muted"
+                                          style="border: 1px solid rgb(177, 170, 170);border-radius:5px;padding:5px 34px; ">
+                                          <h6 style="font-size: small!important; ">0</h6>
+                                        </div><!-- /.col-md-2 -->
+                                        <div class="col-md-2 text-muted"
+                                          style="border: 1px solid rgb(177, 170, 170);border-radius:5px;padding:5px 34px; ">
+                                          <h6 style="font-size: small!important;">Any</h6>
+                                        </div><!-- /.col-md-2 -->
+                                      </div><!-- /.row -->
 
 
-                                  <div class="row  pt-3 ">
-                                    <div class="col-md-3 amount">
-                                      <li style="padding-left: 45px; background-color:rgb(128, 128, 242)"><a
-                                          class="dropdown-item" href="#">All</a></li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">Studio</a></li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">3</a></li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">4</a></li>
-                                      <li style="padding-left: 28px;"> <a class="dropdown-item" href="#">5</a></li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">6</a></li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">7</a></li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">8</a></li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">9</a></li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">10</a></li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">11</a></li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">12</a></li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">13</a></li>
-                                      <li style="padding-left: 28px;"><a class="dropdown-item" href="#">14</a></li>
+                                      <div class="row  pt-3 ">
+                                        <div class="col-md-3 amount">
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">0</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">2</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">3</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">4</a></li>
+                                          <li style="padding-left: 28px;"> <a class="dropdown-item" href="#">5</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">6</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">7</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">8</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">9</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">10</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">11</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">12</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">13</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">14</a></li>
 
-                                    </div><!-- /.col-md-2 -->
+                                        </div><!-- /.col-md-2 -->
+
+                                        <div class="col-md-3 rate">
+
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">Any</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">2</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">3</a></li>
+                                          <li style="padding-left: 45px;"> <a class="dropdown-item" href="#">4</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">6</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">7</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">8</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">9</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">10</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">11</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">12</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">13</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">14</a></li>
+                                        </div><!-- /.col-md-2 -->
+                                      </div><!-- /.row -->
+                                      <div class="close pt-3" style="text-align:center;">
+                                        <a href=""
+                                          style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
+                                      </div><!-- /.close -->
+
+                                    </ul>
+                                  </div>
+                                </div><!-- /.col-md-2 -->
+                                <div class="col-sm-4 col-md-2 col-lg-2 xhme">
+                                  <div class="dropdown beds">
+                                    <button
+                                      style="border:1px solid gray; padding: 6px 74px; border-radius: 0;margin-left: -73px;background-color:white;"
+                                      class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                      data-bs-toggle="dropdown" aria-expanded="false">
+                                      <p style="font-size: xx-small; margin-bottom:0; margin-left:-68px;"
+                                        class="text-muted">BEDS
+                                      </p> <span style="margin-left:-47px;">ALL</span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"
+                                      style="width: 10rem;">
 
 
-                                  </div><!-- /.row -->
-                                  <div class="close pt-3" style="text-align:center;">
-                                    <a href=""
-                                      style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
-                                  </div><!-- /.close -->
+                                      <div class="row  pt-3 ">
+                                        <div class="col-md-3 amount">
+                                          <li style="padding-left: 45px; background-color:rgb(128, 128, 242)"><a
+                                              class="dropdown-item" href="#">All</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">Studio</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">3</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">4</a></li>
+                                          <li style="padding-left: 28px;"> <a class="dropdown-item" href="#">5</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">6</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">7</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">8</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">9</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">10</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">11</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">12</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">13</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">14</a></li>
 
-                                </ul>
-                              </div>
-                            </div><!-- /.col-md-2 -->
-                          </div><!-- /.row -->
+                                        </div><!-- /.col-md-2 -->
+
+
+                                      </div><!-- /.row -->
+                                      <div class="close pt-3" style="text-align:center;">
+                                        <a href=""
+                                          style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
+                                      </div><!-- /.close -->
+
+                                    </ul>
+                                  </div>
+                                </div><!-- /.col-md-2 -->
+                              </div><!-- /.row -->
+                            </div>
+                          </div>
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                              style="background-color:rgba(41,43,43,255);">
+                              <a href="" class="opt text-white">Less Options</a>
+
+
+
+                              <a href="" class="cur">Change Currency</a>
+                              <a href="" class="area">Change Area Unit</a>
+                              <a href="">Reset Search</a>
+                            </button>
+                          </h2>
                         </div>
+
                       </div>
-                      <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
-                          style="background-color:rgba(41,43,43,255);">
-                          <a href="" class="opt text-white">Less Options</a>
 
-
-
-                          <a href="" class="cur">Change Currency</a>
-                          <a href="" class="area">Change Area Unit</a>
-                          <a href="">Reset Search</a>
-                        </button>
-                      </h2>
-                    </div>
+                    </div><!-- /.lower-carosuel -->
 
                   </div>
+                  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="lower-carosuel" style="background-color:rgba(41,43,43,255);">
 
-                </div><!-- /.lower-carosuel -->
+                      <div class="row pt-2 rwp" style=" justify-content:space-around;">
+                        <div class="col-xsm-2 col-sm-2 col-md-2 col-lg-2" style="padding: 0;">
+                          <div class="dropdown city">
+                            <button
+                              style="border:1px solid gray; padding: 6px 32px; border-radius: 0;background-color:white;"
+                              class="btn bg-white dropdown-toggle" type="button" id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              <p style="font-size: xx-small; margin-bottom:0; margin-left:-74px;" class="text-muted">
+                                CITY
+                              </p> <span style="font-size:small;">RAWALPINDI</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li style="padding:6px;"><a style="padding:18px; width:127px;" class="dropdown-item"
+                                  href="#"></a>
+                              </li>
+                              <li><a class="dropdown-item" href="#">Islamabad</a></li>
+                              <li><a class="dropdown-item" href="#">Karachi</a></li>
+                              <li><a class="dropdown-item" href="#">Lahore</a></li>
+                              <li><a class="dropdown-item" href="#">Rawalpindi</a></li>
+                              <li><a class="dropdown-item" href="#">Quetta</a></li>
+                              <li><a class="dropdown-item" href="#">Peshawar</a></li>
+                              <li><a class="dropdown-item" href="#">Karachi</a></li>
+                              <li><a class="dropdown-item" href="#">Lahore</a></li>
+                              <li><a class="dropdown-item" href="#">Rawalpindi</a></li>
+                              <li><a class="dropdown-item" href="#">Quetta</a></li>
+                              <li><a class="dropdown-item" href="#">Peshawar</a></li>
+                            </ul>
+                          </div>
+                        </div><!-- /.col-md-2 -->
+
+
+                        <div class="col-xsm-4 col-sm-4 col-md-4 col-lg-4 location">
+
+                          <input type="text" class="form-control" placeholder="LOCATION" aria-label="City">
+
+                        </div><!-- /.col-md-2 -->
+                        <div class="col-xsm-2 col-sm-2 col-md-2 col-lg-2  col-xlg-2 find">
+                          <button type="button" class="btn btn-success btn-lg"
+                            style="font-size: small; font-weight:bold;    margin-left: -41px;">Find</button>
+                        </div><!-- /.col-md-2 -->
+                      </div><!-- /.row -->
+
+                      <div class="accordion " id="accordionExample">
+                        <div class="accordion-item" style="background-color: rgba(41,43,43,255);">
+
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body" style="padding: 0;">
+
+                              <div class="row pt-2" style="display: flex; justify-content: space-between;
+                              align-items: center;">
+                                <div class="col-sm-6 col-md-2 col-lg-2 shme">
+                                  <div class="dropdown hme">
+                                    <button
+                                      style="border:1px solid gray; padding: 6px 46px; border-radius: 0; background-color:white; margin-left:24px;"
+                                      class="btn   dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                      data-bs-toggle="dropdown" aria-expanded="false">
+                                      <p style="font-size: xx-small; margin-bottom:0; " class="text-muted">PROPERTY TYPE
+                                      </p>
+                                      <span style=" font-size:small;">HOME</span>
+                                    </button>
+                                    <ul class="dropdown-menu" style="min-width: 20rem; padding-left:35px"
+                                      aria-labelledby="dropdownMenuButton1">
+
+                                      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-home" type="button" role="tab"
+                                            aria-controls="pills-home" aria-selected="true" style=" color:#000; background-color: #fff;background-color:white;
+                                          ">Home</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-profile" type="button" role="tab"
+                                            aria-controls="pills-profile" aria-selected="false" style=" color:#000; background-color: #fff;
+                                          ">Plot</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-contact" type="button" role="tab"
+                                            aria-controls="pills-contact" aria-selected="false" style=" color:#000; background-color: #fff;
+                                          ">Commercial</button>
+                                        </li>
+                                      </ul>
+                                      <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                          aria-labelledby="pills-home-tab">
+
+                                          <div class="row pt-">
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">House</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black;  font-size:small;">Flat</a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div><!-- /.row -->
+
+                                          <div class="row pt-3">
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Upper
+                                                Portion</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black;  font-size:small;">lower
+                                                Portion</a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div><!-- /.row -->
+
+                                          <div class="row pt-3">
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Farm
+                                                House</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black;  font-size:small;">Room</a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div><!-- /.row -->
+
+                                          <div class="row pt-3">
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Pent
+                                                House</a>
+                                            </div><!-- /.col-md-5 -->
+
+                                          </div><!-- /.row -->
+
+                                          <div class="row pt-3">
+                                            <div class="col-md-5" style="text-align:end;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Reset</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5" style="text-align:end;">
+                                              <a href=""
+                                                style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div>
+
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                          aria-labelledby="pills-profile-tab">
+
+                                          <div class="row pt-1">
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Residential
+                                                Plot</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black;  font-size:small;">commercial
+                                                Plot</a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div><!-- /.row -->
+
+                                          <div class="row pt-3">
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Agriculture
+                                                Plot</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black;  font-size:small;">Industrial
+                                                Land </a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div><!-- /.row -->
+
+                                          <div class="row pt-3">
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Plot
+                                                File</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black;  font-size:small;">Plot
+                                                Land</a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div><!-- /.row -->
+
+                                          <div class="row pt-3">
+                                            <div class="col-md-5" style="text-align:end;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Reset</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5" style="text-align:end;">
+                                              <a href=""
+                                                style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div>
+
+
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                          aria-labelledby="pills-contact-tab">
+
+                                          <div class="row pt-1">
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Office</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black;  font-size:small;">Shop</a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div><!-- /.row -->
+
+                                          <div class="row pt-3">
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Warehouse</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black;  font-size:small;">Factory</a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div><!-- /.row -->
+
+                                          <div class="row pt-3">
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Building</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black;  font-size:small;">Others</a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div><!-- /.row -->
+
+                                          <div class="row pt-3">
+                                            <div class="col-md-5" style="text-align:end;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Reset</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5" style="text-align:end;">
+                                              <a href=""
+                                                style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div>
+
+                                        </div>
+                                      </div>
+
+                                    </ul>
+                                  </div>
+                                </div><!-- /.col-md-2 -->
+
+                                <div class="col-sm-6 col-md-2 col-lg-2 shme">
+                                  <div class="dropdown any">
+                                    <button
+                                      style="border:1px solid gray; padding: 6px 57px; border-radius: 0;background-color:white; margin-left:3px;"
+                                      class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                      data-bs-toggle="dropdown" aria-expanded="false">
+                                      <p style="font-size: xx-small; margin-bottom:0; margin-left:-78px;"
+                                        class="text-muted">
+                                        PRICE(PKR)</p> <span style="margin-left:-47px;"> <span>0</span> <span>to
+                                          Any</span>
+                                      </span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"
+                                      style="width: 20rem;">
+                                      <p
+                                        style="text-align: center; font-size:small; background-color:lightgray;padding:8px;">
+                                        Change Currency (PKR)</p>
+                                      <div class="row text-center">
+                                        <div class="col-md-6">
+                                          <h6 style="font-size: small!important; ">MIN:</h6>
+                                        </div><!-- /.col-md-6 -->
+                                        <div class="col-md-6">
+                                          <h6 style="font-size: small!important;">MAX:</h6>
+                                        </div><!-- /.col-md-6 -->
+                                      </div><!-- /.row -->
+
+                                      <div class="row text-center"
+                                        style="justify-content:space-evenly; align-items:center;">
+                                        <div class="col-md-2 text-muted"
+                                          style="border: 1px solid rgb(177, 170, 170);border-radius:5px;padding:5px 34px; ">
+                                          <h6 style="font-size: small!important; ">0</h6>
+                                        </div><!-- /.col-md-2 -->
+                                        <div class="col-md-2 text-muted"
+                                          style="border: 1px solid rgb(177, 170, 170);border-radius:5px;padding:5px 34px; ">
+                                          <h6 style="font-size: small!important;">Any</h6>
+                                        </div><!-- /.col-md-2 -->
+                                      </div><!-- /.row -->
+
+                                      <div class="row  pt-3 ">
+                                        <div class="col-md-3 amount">
+
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">0</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">50,000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">500,000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"> <a class="dropdown-item"
+                                              href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item"
+                                              href="#">10000,0000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item"
+                                              href="#">10000,0000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item"
+                                              href="#">10000,0000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item"
+                                              href="#">10000,0000</a>
+                                          </li>
+                                        </div><!-- /.col-md-2 -->
+
+                                        <div class="col-md-3 rate">
+
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">Any</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">50,000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">500,000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"> <a class="dropdown-item"
+                                              href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item"
+                                              href="#">10000,0000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item"
+                                              href="#">10000,0000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item"
+                                              href="#">10000,0000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item"
+                                              href="#">10000,0000</a>
+                                          </li>
+                                        </div><!-- /.col-md-2 -->
+
+                                      </div><!-- /.row -->
+
+
+                                      <div class="close pt-3" style="text-align:center;">
+                                        <a href=""
+                                          style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
+                                      </div><!-- /.close -->
+
+                                    </ul>
+                                  </div>
+                                </div><!-- /.col-md-2 -->
+                                <div class="col-sm-6 col-md-2 col-lg-2 xhme">
+                                  <div class="dropdown marla">
+                                    <button
+                                      style="border:1px solid gray; padding: 6px 57px; border-radius: 0; margin-left: -36px;background-color:white;"
+                                      class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                      data-bs-toggle="dropdown" aria-expanded="false">
+                                      <p style="font-size: xx-small; margin-bottom:0; margin-left:-65px;"
+                                        class="text-muted">
+                                        AREA(MARLA)</p> <span style="margin-left:-47px;"> <span>0</span> <span>to
+                                          Any</span></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"
+                                      style="width: 19rem;">
+                                      <p
+                                        style="text-align: center; font-size:small; background-color:lightgray;padding:8px;">
+                                        Change area unit (Marla)</p>
+                                      <div class="row text-center">
+                                        <div class="col-md-6">
+                                          <h6 style="font-size: small!important; ">MIN:</h6>
+                                        </div><!-- /.col-md-6 -->
+                                        <div class="col-md-6">
+                                          <h6 style="font-size: small!important;">MAX:</h6>
+                                        </div><!-- /.col-md-6 -->
+                                      </div><!-- /.row -->
+
+                                      <div class="row text-center"
+                                        style="justify-content:space-evenly; align-items:center;">
+                                        <div class="col-md-2 text-muted"
+                                          style="border: 1px solid rgb(177, 170, 170);border-radius:5px;padding:5px 34px; ">
+                                          <h6 style="font-size: small!important; ">0</h6>
+                                        </div><!-- /.col-md-2 -->
+                                        <div class="col-md-2 text-muted"
+                                          style="border: 1px solid rgb(177, 170, 170);border-radius:5px;padding:5px 34px; ">
+                                          <h6 style="font-size: small!important;">Any</h6>
+                                        </div><!-- /.col-md-2 -->
+                                      </div><!-- /.row -->
+
+
+                                      <div class="row  pt-3 ">
+                                        <div class="col-md-3 amount">
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">0</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">2</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">3</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">4</a></li>
+                                          <li style="padding-left: 28px;"> <a class="dropdown-item" href="#">5</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">6</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">7</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">8</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">9</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">10</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">11</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">12</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">13</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">14</a></li>
+
+                                        </div><!-- /.col-md-2 -->
+
+                                        <div class="col-md-3 rate">
+
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">Any</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">2</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">3</a></li>
+                                          <li style="padding-left: 45px;"> <a class="dropdown-item" href="#">4</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">6</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">7</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">8</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">9</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">10</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">11</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">12</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">13</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">14</a></li>
+                                        </div><!-- /.col-md-2 -->
+                                      </div><!-- /.row -->
+                                      <div class="close pt-3" style="text-align:center;">
+                                        <a href=""
+                                          style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
+                                      </div><!-- /.close -->
+
+                                    </ul>
+                                  </div>
+                                </div><!-- /.col-md-2 -->
+                                <div class="col-sm-4 col-md-2 col-lg-2 xhme">
+                                  <div class="dropdown beds">
+                                    <button
+                                      style="border:1px solid gray; padding: 6px 74px; border-radius: 0;margin-left: -73px;background-color:white;"
+                                      class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                      data-bs-toggle="dropdown" aria-expanded="false">
+                                      <p style="font-size: xx-small; margin-bottom:0; margin-left:-68px;"
+                                        class="text-muted">BEDS
+                                      </p> <span style="margin-left:-47px;">ALL</span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"
+                                      style="width: 10rem;">
+
+
+                                      <div class="row  pt-3 ">
+                                        <div class="col-md-3 amount">
+                                          <li style="padding-left: 45px; background-color:rgb(128, 128, 242)"><a
+                                              class="dropdown-item" href="#">All</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">Studio</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">3</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">4</a></li>
+                                          <li style="padding-left: 28px;"> <a class="dropdown-item" href="#">5</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">6</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">7</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">8</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">9</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">10</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">11</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">12</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">13</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">14</a></li>
+
+                                        </div><!-- /.col-md-2 -->
+
+
+                                      </div><!-- /.row -->
+                                      <div class="close pt-3" style="text-align:center;">
+                                        <a href=""
+                                          style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
+                                      </div><!-- /.close -->
+
+                                    </ul>
+                                  </div>
+                                </div><!-- /.col-md-2 -->
+                              </div><!-- /.row -->
+                            </div>
+                          </div>
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                              style="background-color:rgba(41,43,43,255);">
+                              <a href="" class="opt text-white">Less Options</a>
+
+
+
+                              <a href="" class="cur">Change Currency</a>
+                              <a href="" class="area">Change Area Unit</a>
+                              <a href="">Reset Search</a>
+                            </button>
+                          </h2>
+                        </div>
+
+                      </div>
+
+                    </div><!-- /.lower-carosuel -->
+
+                  </div>
+                  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="lower-carosuel" style="background-color:rgba(41,43,43,255);">
+
+                      <div class="row pt-2 rwp" style=" justify-content:space-around;">
+                        <div class="col-xsm-2 col-sm-2 col-md-2 col-lg-2" style="padding: 0;">
+                          <div class="dropdown city">
+                            <button
+                              style="border:1px solid gray; padding: 6px 32px; border-radius: 0;background-color:white;"
+                              class="btn bg-white dropdown-toggle" type="button" id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              <p style="font-size: xx-small; margin-bottom:0; margin-left:-74px;" class="text-muted">
+                                CITY
+                              </p> <span style="font-size:small;">RAWALPINDI</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li style="padding:6px;"><a style="padding:18px; width:127px;" class="dropdown-item"
+                                  href="#"></a>
+                              </li>
+                              <li><a class="dropdown-item" href="#">Islamabad</a></li>
+                              <li><a class="dropdown-item" href="#">Karachi</a></li>
+                              <li><a class="dropdown-item" href="#">Lahore</a></li>
+                              <li><a class="dropdown-item" href="#">Rawalpindi</a></li>
+                              <li><a class="dropdown-item" href="#">Quetta</a></li>
+                              <li><a class="dropdown-item" href="#">Peshawar</a></li>
+                              <li><a class="dropdown-item" href="#">Karachi</a></li>
+                              <li><a class="dropdown-item" href="#">Lahore</a></li>
+                              <li><a class="dropdown-item" href="#">Rawalpindi</a></li>
+                              <li><a class="dropdown-item" href="#">Quetta</a></li>
+                              <li><a class="dropdown-item" href="#">Peshawar</a></li>
+                            </ul>
+                          </div>
+                        </div><!-- /.col-md-2 -->
+
+
+                        <div class="col-xsm-4 col-sm-4 col-md-4 col-lg-4 location">
+
+                          <input type="text" class="form-control" placeholder="LOCATION" aria-label="City">
+
+                        </div><!-- /.col-md-2 -->
+                        <div class="col-xsm-2 col-sm-2 col-md-2 col-lg-2  col-xlg-2 find">
+                          <button type="button" class="btn btn-success btn-lg"
+                            style="font-size: small; font-weight:bold;    margin-left: -41px;">Find</button>
+                        </div><!-- /.col-md-2 -->
+                      </div><!-- /.row -->
+
+                      <div class="accordion " id="accordionExample">
+                        <div class="accordion-item" style="background-color: rgba(41,43,43,255);">
+
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body" style="padding: 0;">
+
+                              <div class="row pt-2" style="display: flex; justify-content: space-between;
+                              align-items: center;">
+                                <div class="col-sm-6 col-md-2 col-lg-2 shme">
+                                  <div class="dropdown hme">
+                                    <button
+                                      style="border:1px solid gray; padding: 6px 46px; border-radius: 0; background-color:white; margin-left:24px;"
+                                      class="btn   dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                      data-bs-toggle="dropdown" aria-expanded="false">
+                                      <p style="font-size: xx-small; margin-bottom:0; " class="text-muted">PROPERTY TYPE
+                                      </p>
+                                      <span style=" font-size:small;">HOME</span>
+                                    </button>
+                                    <ul class="dropdown-menu" style="min-width: 20rem; padding-left:35px"
+                                      aria-labelledby="dropdownMenuButton1">
+
+                                      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-home" type="button" role="tab"
+                                            aria-controls="pills-home" aria-selected="true" style=" color:#000; background-color: #fff;background-color:white;
+                                          ">Home</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-profile" type="button" role="tab"
+                                            aria-controls="pills-profile" aria-selected="false" style=" color:#000; background-color: #fff;
+                                          ">Plot</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-contact" type="button" role="tab"
+                                            aria-controls="pills-contact" aria-selected="false" style=" color:#000; background-color: #fff;
+                                          ">Commercial</button>
+                                        </li>
+                                      </ul>
+                                      <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                          aria-labelledby="pills-home-tab">
+
+                                          <div class="row pt-">
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">House</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black;  font-size:small;">Flat</a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div><!-- /.row -->
+
+                                          <div class="row pt-3">
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Upper
+                                                Portion</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black;  font-size:small;">lower
+                                                Portion</a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div><!-- /.row -->
+
+                                          <div class="row pt-3">
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Farm
+                                                House</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black;  font-size:small;">Room</a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div><!-- /.row -->
+
+                                          <div class="row pt-3">
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Pent
+                                                House</a>
+                                            </div><!-- /.col-md-5 -->
+
+                                          </div><!-- /.row -->
+
+                                          <div class="row pt-3">
+                                            <div class="col-md-5" style="text-align:end;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Reset</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5" style="text-align:end;">
+                                              <a href=""
+                                                style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div>
+
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                          aria-labelledby="pills-profile-tab">
+
+                                          <div class="row pt-1">
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Residential
+                                                Plot</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black;  font-size:small;">commercial
+                                                Plot</a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div><!-- /.row -->
+
+                                          <div class="row pt-3">
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Agriculture
+                                                Plot</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black;  font-size:small;">Industrial
+                                                Land </a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div><!-- /.row -->
+
+                                          <div class="row pt-3">
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Plot
+                                                File</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black;  font-size:small;">Plot
+                                                Land</a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div><!-- /.row -->
+
+                                          <div class="row pt-3">
+                                            <div class="col-md-5" style="text-align:end;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Reset</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5" style="text-align:end;">
+                                              <a href=""
+                                                style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div>
+
+
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                          aria-labelledby="pills-contact-tab">
+
+                                          <div class="row pt-1">
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Office</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black;  font-size:small;">Shop</a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div><!-- /.row -->
+
+                                          <div class="row pt-3">
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Warehouse</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black;  font-size:small;">Factory</a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div><!-- /.row -->
+
+                                          <div class="row pt-3">
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215); text-align:center;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Building</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5"
+                                              style="border: 1px solid rgb(223, 215, 215);text-align:center; margin-left:5px;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black;  font-size:small;">Others</a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div><!-- /.row -->
+
+                                          <div class="row pt-3">
+                                            <div class="col-md-5" style="text-align:end;">
+                                              <a href=""
+                                                style="text-decoration: none; color:black; font-size:small;">Reset</a>
+                                            </div><!-- /.col-md-5 -->
+                                            <div class="col-md-5" style="text-align:end;">
+                                              <a href=""
+                                                style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
+                                            </div><!-- /.col-md-5 -->
+                                          </div>
+
+                                        </div>
+                                      </div>
+
+                                    </ul>
+                                  </div>
+                                </div><!-- /.col-md-2 -->
+
+                                <div class="col-sm-6 col-md-2 col-lg-2 shme">
+                                  <div class="dropdown any">
+                                    <button
+                                      style="border:1px solid gray; padding: 6px 57px; border-radius: 0;background-color:white; margin-left:3px;"
+                                      class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                      data-bs-toggle="dropdown" aria-expanded="false">
+                                      <p style="font-size: xx-small; margin-bottom:0; margin-left:-78px;"
+                                        class="text-muted">
+                                        PRICE(PKR)</p> <span style="margin-left:-47px;"> <span>0</span> <span>to
+                                          Any</span>
+                                      </span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"
+                                      style="width: 20rem;">
+                                      <p
+                                        style="text-align: center; font-size:small; background-color:lightgray;padding:8px;">
+                                        Change Currency (PKR)</p>
+                                      <div class="row text-center">
+                                        <div class="col-md-6">
+                                          <h6 style="font-size: small!important; ">MIN:</h6>
+                                        </div><!-- /.col-md-6 -->
+                                        <div class="col-md-6">
+                                          <h6 style="font-size: small!important;">MAX:</h6>
+                                        </div><!-- /.col-md-6 -->
+                                      </div><!-- /.row -->
+
+                                      <div class="row text-center"
+                                        style="justify-content:space-evenly; align-items:center;">
+                                        <div class="col-md-2 text-muted"
+                                          style="border: 1px solid rgb(177, 170, 170);border-radius:5px;padding:5px 34px; ">
+                                          <h6 style="font-size: small!important; ">0</h6>
+                                        </div><!-- /.col-md-2 -->
+                                        <div class="col-md-2 text-muted"
+                                          style="border: 1px solid rgb(177, 170, 170);border-radius:5px;padding:5px 34px; ">
+                                          <h6 style="font-size: small!important;">Any</h6>
+                                        </div><!-- /.col-md-2 -->
+                                      </div><!-- /.row -->
+
+                                      <div class="row  pt-3 ">
+                                        <div class="col-md-3 amount">
+
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">0</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">50,000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">500,000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"> <a class="dropdown-item"
+                                              href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item"
+                                              href="#">10000,0000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item"
+                                              href="#">10000,0000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item"
+                                              href="#">10000,0000</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item"
+                                              href="#">10000,0000</a>
+                                          </li>
+                                        </div><!-- /.col-md-2 -->
+
+                                        <div class="col-md-3 rate">
+
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">Any</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">50,000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">500,000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"> <a class="dropdown-item"
+                                              href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item"
+                                              href="#">10000,0000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item"
+                                              href="#">10000,0000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5000,000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item"
+                                              href="#">10000,0000</a>
+                                          </li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item"
+                                              href="#">10000,0000</a>
+                                          </li>
+                                        </div><!-- /.col-md-2 -->
+
+                                      </div><!-- /.row -->
+
+
+                                      <div class="close pt-3" style="text-align:center;">
+                                        <a href=""
+                                          style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
+                                      </div><!-- /.close -->
+
+                                    </ul>
+                                  </div>
+                                </div><!-- /.col-md-2 -->
+                                <div class="col-sm-6 col-md-2 col-lg-2 xhme">
+                                  <div class="dropdown marla">
+                                    <button
+                                      style="border:1px solid gray; padding: 6px 57px; border-radius: 0; margin-left: -36px;background-color:white;"
+                                      class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                      data-bs-toggle="dropdown" aria-expanded="false">
+                                      <p style="font-size: xx-small; margin-bottom:0; margin-left:-65px;"
+                                        class="text-muted">
+                                        AREA(MARLA)</p> <span style="margin-left:-47px;"> <span>0</span> <span>to
+                                          Any</span></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"
+                                      style="width: 19rem;">
+                                      <p
+                                        style="text-align: center; font-size:small; background-color:lightgray;padding:8px;">
+                                        Change area unit (Marla)</p>
+                                      <div class="row text-center">
+                                        <div class="col-md-6">
+                                          <h6 style="font-size: small!important; ">MIN:</h6>
+                                        </div><!-- /.col-md-6 -->
+                                        <div class="col-md-6">
+                                          <h6 style="font-size: small!important;">MAX:</h6>
+                                        </div><!-- /.col-md-6 -->
+                                      </div><!-- /.row -->
+
+                                      <div class="row text-center"
+                                        style="justify-content:space-evenly; align-items:center;">
+                                        <div class="col-md-2 text-muted"
+                                          style="border: 1px solid rgb(177, 170, 170);border-radius:5px;padding:5px 34px; ">
+                                          <h6 style="font-size: small!important; ">0</h6>
+                                        </div><!-- /.col-md-2 -->
+                                        <div class="col-md-2 text-muted"
+                                          style="border: 1px solid rgb(177, 170, 170);border-radius:5px;padding:5px 34px; ">
+                                          <h6 style="font-size: small!important;">Any</h6>
+                                        </div><!-- /.col-md-2 -->
+                                      </div><!-- /.row -->
+
+
+                                      <div class="row  pt-3 ">
+                                        <div class="col-md-3 amount">
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">0</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">2</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">3</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">4</a></li>
+                                          <li style="padding-left: 28px;"> <a class="dropdown-item" href="#">5</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">6</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">7</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">8</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">9</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">10</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">11</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">12</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">13</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">14</a></li>
+
+                                        </div><!-- /.col-md-2 -->
+
+                                        <div class="col-md-3 rate">
+
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">Any</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">2</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">3</a></li>
+                                          <li style="padding-left: 45px;"> <a class="dropdown-item" href="#">4</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">5</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">6</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">7</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">8</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">9</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">10</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">11</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">12</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">13</a></li>
+                                          <li style="padding-left: 45px;"><a class="dropdown-item" href="#">14</a></li>
+                                        </div><!-- /.col-md-2 -->
+                                      </div><!-- /.row -->
+                                      <div class="close pt-3" style="text-align:center;">
+                                        <a href=""
+                                          style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
+                                      </div><!-- /.close -->
+
+                                    </ul>
+                                  </div>
+                                </div><!-- /.col-md-2 -->
+                                <div class="col-sm-4 col-md-2 col-lg-2 xhme">
+                                  <div class="dropdown beds">
+                                    <button
+                                      style="border:1px solid gray; padding: 6px 74px; border-radius: 0;margin-left: -73px;background-color:white;"
+                                      class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                      data-bs-toggle="dropdown" aria-expanded="false">
+                                      <p style="font-size: xx-small; margin-bottom:0; margin-left:-68px;"
+                                        class="text-muted">BEDS
+                                      </p> <span style="margin-left:-47px;">ALL</span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"
+                                      style="width: 10rem;">
+
+
+                                      <div class="row  pt-3 ">
+                                        <div class="col-md-3 amount">
+                                          <li style="padding-left: 45px; background-color:rgb(128, 128, 242)"><a
+                                              class="dropdown-item" href="#">All</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">Studio</a>
+                                          </li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">3</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">4</a></li>
+                                          <li style="padding-left: 28px;"> <a class="dropdown-item" href="#">5</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">6</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">7</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">8</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">9</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">10</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">11</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">12</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">13</a></li>
+                                          <li style="padding-left: 28px;"><a class="dropdown-item" href="#">14</a></li>
+
+                                        </div><!-- /.col-md-2 -->
+
+
+                                      </div><!-- /.row -->
+                                      <div class="close pt-3" style="text-align:center;">
+                                        <a href=""
+                                          style="text-decoration: none; color:white; font-size:small; border:1px solid black; background-color:black; padding:4px; border-radius:5px;">Close</a>
+                                      </div><!-- /.close -->
+
+                                    </ul>
+                                  </div>
+                                </div><!-- /.col-md-2 -->
+                              </div><!-- /.row -->
+                            </div>
+                          </div>
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                              style="background-color:rgba(41,43,43,255);">
+                              <a href="" class="opt text-white">Less Options</a>
+
+
+
+                              <a href="" class="cur">Change Currency</a>
+                              <a href="" class="area">Change Area Unit</a>
+                              <a href="">Reset Search</a>
+                            </button>
+                          </h2>
+                        </div>
+
+                      </div>
+
+                    </div><!-- /.lower-carosuel -->
+
+                  </div>
+                </div>
+
 
 
               </div><!-- /.col-md-8 -->
@@ -1532,11 +2666,11 @@
         <div class="container">
           <div class="container">
             <h5 class="pt-3 text-muted">Popular Cities to Buy Properties</h5>
-       
-            <hr >
+
+            <hr>
             <div class="row">
               <div class="col-md-4">
-                <h6 class="pb-3 text-muted" >HOUSES</h6>
+                <h6 class="pb-3 text-muted">HOUSES</h6>
                 <p>House for sale DHA Defence (8544)</p>
                 <p>House for sale DHA Defence (8544)</p>
                 <p>House for sale DHA Defence (8544)</p>
@@ -1548,7 +2682,7 @@
               </div><!-- /.col-md-4 -->
 
               <div class="col-md-4">
-             <br><br>
+                <br><br>
                 <p>House for sale DHA Defence (8544)</p>
                 <p>House for sale DHA Defence (8544)</p>
                 <p>House for sale DHA Defence (8544)</p>
@@ -1579,10 +2713,10 @@
         <div class="container">
           <div class="container">
             <h5 class="pt-3 text-muted">Most Popular Location for Homes</h5>
-            <hr >
+            <hr>
             <div class="row">
               <div class="col-md-4">
-                <h6 class="pb-3 text-muted" >LAHORE</h6>
+                <h6 class="pb-3 text-muted">LAHORE</h6>
                 <p>House for sale DHA Defence (8544)</p>
                 <p>House for sale DHA Defence (8544)</p>
                 <p>House for sale DHA Defence (8544)</p>
@@ -1594,7 +2728,7 @@
               </div><!-- /.col-md-4 -->
 
               <div class="col-md-4">
-                <h6 class="pb-3 text-muted" >KARACHI</h6>
+                <h6 class="pb-3 text-muted">KARACHI</h6>
                 <p>House for sale DHA Defence (8544)</p>
                 <p>House for sale DHA Defence (8544)</p>
                 <p>House for sale DHA Defence (8544)</p>
@@ -1621,30 +2755,30 @@
         </div><!-- /.container -->
       </div><!-- /.popular-wrapper -->
 
-      
+
       <div class="popular-wrapper">
         <div class="container">
           <div class="container">
             <h5 class="pt-3 text-muted">Popular Cities to Rent Properties</h5>
-       
-            <hr >
+
+            <hr>
             <div class="row">
               <div class="col-md-4">
-                <h6 class="pb-3 text-muted" >HOUSES</h6>
+                <h6 class="pb-3 text-muted">HOUSES</h6>
                 <p>House for sale DHA Defence (8544)</p>
                 <p>House for sale DHA Defence (8544)</p>
                 <p>House for sale DHA Defence (8544)</p>
                 <p>House for sale DHA Defence (8544)</p>
-             
+
               </div><!-- /.col-md-4 -->
 
               <div class="col-md-4">
-             <br><br>
+                <br><br>
                 <p>House for sale DHA Defence (8544)</p>
                 <p>House for sale DHA Defence (8544)</p>
                 <p>House for sale DHA Defence (8544)</p>
                 <p>House for sale DHA Defence (8544)</p>
-               >
+                >
               </div><!-- /.col-md-4 -->
 
               <div class="col-md-4">
@@ -1653,7 +2787,7 @@
                 <p>House for sale DHA Defence (8544)</p>
                 <p>House for sale DHA Defence (8544)</p>
                 <p>House for sale DHA Defence (8544)</p>
-            
+
               </div><!-- /.col-md-4 -->
             </div><!-- /.row -->
           </div><!-- /.container -->
@@ -1662,27 +2796,151 @@
 
 
       <div class="app-wrapper">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 pt-5">
-            <h2>Get the Zameen App</h2>
-            <h6>Buy and Rent Property faster and <br> better using our app. </h6>
-          </div><!-- /.col-md-4 -->
-          <div class="col-md-4">
-            <img src="assets/mob_app-removebg-preview.png" alt="">
-          </div><!-- /.col-md-4 -->
+        <div class="container">
+          <div class="row pt-5">
+            <div class="col-md-4 pt-5">
+              <h2>Get the Zameen App</h2>
+              <h6>Buy and Rent Property faster and <br> better using our app. </h6>
+            </div><!-- /.col-md-4 -->
+            <div class="col-md-4">
+              <img src="assets/mob_app-removebg-preview.png" alt="">
+            </div><!-- /.col-md-4 -->
 
-          <div class="col-md-4">
-         <a href="" type="button"><i class="fa fa-apple" aria-hidden="true"></i><span><p>Download on the </p> <h6>App Store</h6></span></a>
-         <a href=""  type="button" ><i class="fa fa-play" aria-hidden="true"></i><span><p>Get it on the </p> <h6>Google Play</h6></span></a>
-          </div><!-- /.col-md-4 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
+            <div class="col-md-4 d-flex" style="justify-content:space-evenly ;">
+              <div class="row">
+                <div class="col-md-6">
+                  <a href="" type="button"><i class="fa fa-apple" aria-hidden="true"></i><span>
+                      <p>Download on the </p>
+                      <h6>App Store</h6>
+                    </span></a>
+
+                </div><!-- /.col-md-6 -->
+                <div class="col-md-6">
+
+                  <a href="" type="button"><i class="fa fa-play" aria-hidden="true"></i><span>
+                      <p>Get it on the </p>
+                      <h6>Google Play</h6>
+                    </span></a>
+                </div><!-- /.col-md-6 -->
+
+                <div class="col-md-8">
+                  <h5 style="text-align: end;">Scan the QR Code to <br> get the App</h5>
+
+                </div><!-- /.col-md-6 -->
+                <div class="col-md-4">
+
+                  <img class="qr" src="assets/qr-code.png" alt="">
+                </div><!-- /.col-md-6 -->
+              </div><!-- /.row -->
+
+            </div><!-- /.col-md-4 -->
+
+          </div><!-- /.row -->
+        </div><!-- /.container -->
       </div><!-- /.app-wrapper -->
+
+      <div class="curved-arrow">
+        <a href=""><img src="assets/arrows.png" alt=""></a>
+      </div><!-- /.curved-arrow -->
+
+      <div class="lead-text pt-5 pb-3 ">
+        <div class="container">
+          <h4 class="pt-3">Our Home Partners</h4>
+        </div><!-- /.container -->
+      </div><!-- /.lead-text -->
+
+      <div class="partner-wrapper pb-5">
+        <div class="container">
+          <div class="row" style="text-align: center;">
+            <div class="col-md-2 ">
+              <img src="assets/hbl logo.png" alt="">
+            </div><!-- /.col-md-2 -->
+
+            <div class="col-md-2">
+              <img src="assets/standard chartered.jpeg" alt="">
+            </div><!-- /.col-md-2 -->
+
+            <div class="col-md-2">
+              <img src="assets/js bank.png" alt="">
+            </div><!-- /.col-md-2 -->
+
+            <div class="col-md-2">
+              <img src="assets/hbfc logo.jpeg" alt="">
+            </div><!-- /.col-md-2 -->
+
+            <div class="col-md-2">
+              <img src="assets/habib metro logo.png" alt="">
+            </div><!-- /.col-md-2 -->
+
+            <div class="col-md-2">
+              <img src="assets/mcb bank logo.jpg" alt="">
+            </div><!-- /.col-md-2 -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </div><!-- /.partner-wrapper -->
 
     </main>
 
-    <footer>
+    <footer class="footer py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 text-white text-muted">
+            <h5 class="pb-4">Company</h5>
+            <p>About Us</p>
+            <p>Contact Us</p>
+            <p>Jobs</p>
+            <p>Help & Support</p>
+            <span>Advertise On Zameen</p>
+              <p>Terms of Use</p>
+          </div><!-- /.col-md-3 -->
+
+          <div class="col-md-3 text-white text-muted">
+            <h5 class="pb-4">Connect</h5>
+            <p>Blog</p>
+            <p>New</p>
+            <p>Forum</p>
+            <p>Expo</p>
+            <span>Real Estate Agent</p>
+              <p>Add Property</p>
+          </div><!-- /.col-md-3 -->
+
+          <div class="col-md-3 text-white text-muted head">
+            <h5 class="pb-4">Head Office</h5>
+            <p><a href=""><i class="fa fa-map-marker text-muted" aria-hidden="true"></i><span class="text-muted">Pearl
+                  One,94-B/I MM Alam <br> Road, Gulberg-III, Lahore, Pakistan</span> </a></p>
+            <p><a href=""><i class="fa fa-phone text-muted" aria-hidden="true"></i><span class="text-muted">0800-zameen
+                  (92633)</span> </a></p>
+            <p><a href=""><i class="fa fa-envelope text-muted" aria-hidden="true"></i><span class="text-muted">Email
+                  Us</span> </a></p>
+          </div><!-- /.col-md-4 -->
+
+          <div class="col-md-3 text-white text-muted head">
+            <h5 class="pb-4">Roshan Digital Account</h5>
+            <a href="http:www.roshandigitalaccount.com" target="_blank"><img
+                src="assets/roshan_account-removebg-preview.png" alt=""></a>
+            <h5 class="py-4">GET CONNECTED</h5>
+            <a href="http:www.facebook.com" target="_blank"><img src="assets/facebook.png" alt=""></a>
+            <a href="http:www.instagram.com" target="_blank"><img src="assets/instagram.png" alt=""></a>
+            <a href="http:www.youtube.com" target="_blank"><img src="assets/youtube.png" alt=""></a>
+            <br><br>
+            <a href="http:www.twitter.com" target="_blank"><img src="assets/twitter.png" alt=""></a>
+            <a href="http:www.linkedin.com" target="_blank"><img src="assets/linkedin.png" alt=""></a>
+          </div><!-- /.col-md-4 -->
+        </div><!-- /.row -->
+
+      </div><!-- /.container -->
+      <div class="copy-right pt-5 ">
+        <div class="container">
+          <div class="row ">
+            <div class="col-md-6 text-muted">
+              <p>@copyright 2007-2022 Zameen.com.All Right Reserved</p>
+            </div><!-- /.col-md-6 -->
+            <div class="col-md-6 top">
+              <a href=""><span>Top</span> <i class="fa fa-angle-up text-dard text-muted" aria-hidden="true"></i></a>
+            </div><!-- /.col-md-6 -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </div><!-- /.copy-right -->
 
     </footer>
 
@@ -1757,9 +3015,54 @@
       </div>
     </div>
     <div class="triangle-up"></div>
-    <div class="carosuel-up"></div>
+    <!-- <div class="carosuel-up"></div> -->
+    <!-- <div class="carosuel-up-rent"></div> -->
+
   </div>
   </div>
+
+  <div class="floating-wraper">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn bell" data-bs-toggle="modal" data-bs-target="#bellModal">
+      <img src="assets/notification.png" alt=""></i>
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="bellModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+
+          </div>
+          <div class="modal-body pb-3">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-1">
+                  <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#bellModal">
+                <img src="assets/notification.png" alt="">
+                </div><!-- /.col-md-2 -->
+                <div class="col-md-6">
+                  <h5 class="text-muted text-center">Get the Latest Property, Update Real Estate Projects and News  Subscribe Now to be Notified</h5>
+                </div><!-- /.col-md-6 -->
+                <div class="col-md-5">
+                  <button type="button" class="btn notified btn-md text-white">I want to be notified</button>
+                  <button type="button" class="btn later btn-md">Maybe Later</button>
+                </div><!-- /.col-md-4 -->
+              </div><!-- /.row -->
+            </div><!-- /.container -->
+           
+          
+            
+      
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div><!-- /.floating-wraper -->
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
